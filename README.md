@@ -4,6 +4,8 @@
 [![Version](https://img.shields.io/cocoapods/v/AMZLocationManager.svg?style=flat)](https://cocoapods.org/pods/AMZLocationManager)
 [![License](https://img.shields.io/cocoapods/l/AMZLocationManager.svg?style=flat)](https://cocoapods.org/pods/AMZLocationManager)
 [![Platform](https://img.shields.io/cocoapods/p/AMZLocationManager.svg?style=flat)](https://cocoapods.org/pods/AMZLocationManager)
+[![Beerpay](https://beerpay.io/Appmazo/AMZLocationManager/badge.svg)](https://beerpay.io/Appmazo/AMZLocationManager)
+[![Beerpay](https://beerpay.io/Appmazo/AMZLocationManager/make-wish.svg)](https://beerpay.io/Appmazo/AMZLocationManager)
 
 ## Example
 
@@ -116,3 +118,6 @@ nitwitstudios, jhickman@appmazo.com
 ## License
 
 AMZLocationManager is available under the MIT license. See the LICENSE file for more info.
+
+## Buy Me A Beer?
+[![Beerpay](https://beerpay.io/Appmazo/AMZLocationManager/badge.svg)](https://beerpay.io/Appmazo/AMZLocationManager)
