@@ -54,9 +54,9 @@ class ExampleTableViewController: UITableViewController {
     // MARK: - ExampleTableViewController
     
     private func locationCellForIndexPath(_ indexPath: IndexPath) -> UITableViewCell {
-        if locationManager.isLocationsAuthorized() {
-            switch indexPath.row {
-            case ExampleTableViewControllerLocationRow.currentLocation.rawValue:
+        switch indexPath.row {
+        case ExampleTableViewControllerLocationRow.currentLocation.rawValue:
+            if locationManager.isLocationsAuthorized() {
                 let cell = tableView.dequeueReusableCell(withIdentifier: UITableViewCell.reuseIdentifier, for: indexPath)
                 cell.selectionStyle = .none
                 cell.textLabel?.text = "Use Current Location"
@@ -66,45 +66,57 @@ class ExampleTableViewController: UITableViewController {
                 locationSwitch.addTarget(self, action: #selector(locationSwitchUpdated(_:)), for: .valueChanged)
                 cell.accessoryView = locationSwitch
                 return cell
-            case ExampleTableViewControllerLocationRow.locationAddress.rawValue:
-                if let cell = tableView.dequeueReusableCell(withIdentifier: LocationTableViewCell.reuseIdentifier, for: indexPath) as? LocationTableViewCell {
-                    cell.delegate = self
-                    
-                    if locationManager.isLocationUpdating {
-                        cell.locationText = "Updating your location..."
-                        cell.state = .loading
-                    } else if locationManager.currentLocation == nil {
-                        cell.locationText = locationManager.currentAddress
-                        cell.state = .customLocation
-                    } else if locationManager.currentLocation != nil {
-                        cell.locationText = locationManager.currentAddress
-                        if locationManager.useCustomLocation || !locationManager.isLocationsAuthorized() {
-                            cell.state = .customLocation
-                        } else {
-                            cell.state = .userLocation
-                        }
-                    }
-                    
-                    return cell
-                }
-            default:
-                break
-            }
-        } else {
-            if let cell = tableView.dequeueReusableCell(withIdentifier: PermissionPromptTableViewCell.reuseIdentifier, for: indexPath) as? PermissionPromptTableViewCell {
+            } else {
+                guard let cell = tableView.dequeueReusableCell(withIdentifier: PermissionPromptTableViewCell.reuseIdentifier, for: indexPath) as? PermissionPromptTableViewCell else { return UITableViewCell() }
                 cell.delegate = self
                 cell.permissionType = .locationAlways
-                cell.enabled = !locationManager.isLocationsAuthorized()
+                cell.enabled = !locationManager.isLocationAuthorizedAlways()
                 return cell
             }
+        case ExampleTableViewControllerLocationRow.locationAddress.rawValue:
+            if locationManager.isLocationsAuthorized() {
+                guard let cell = tableView.dequeueReusableCell(withIdentifier: LocationTableViewCell.reuseIdentifier, for: indexPath) as? LocationTableViewCell else { return UITableViewCell() }
+                cell.delegate = self
+                
+                if locationManager.isLocationUpdating {
+                    cell.locationText = "Updating your location..."
+                    cell.state = .loading
+                } else if locationManager.currentLocation == nil {
+                    cell.locationText = locationManager.currentAddress
+                    cell.state = .customLocation
+                } else if locationManager.currentLocation != nil {
+                    cell.locationText = locationManager.currentAddress
+                    if locationManager.useCustomLocation || !locationManager.isLocationsAuthorized() {
+                        cell.state = .customLocation
+                    } else {
+                        cell.state = .userLocation
+                    }
+                }
+                return cell
+            } else {
+                guard let cell = tableView.dequeueReusableCell(withIdentifier: PermissionPromptTableViewCell.reuseIdentifier, for: indexPath) as? PermissionPromptTableViewCell else { return UITableViewCell() }
+                cell.delegate = self
+                cell.permissionType = .locationWhenInUse
+                cell.enabled = !locationManager.isLocationAuthorizedWhenInUse()
+                return cell
+            }
+        default:
+            return UITableViewCell()
         }
-        
-        return UITableViewCell()
     }
     
     @objc private func locationSwitchUpdated(_ sender: UISwitch) {
         locationManager.useCustomLocation = !sender.isOn
         tableView.reloadData()
+    }
+    
+    private func showAuthorizationAlreadySetAlert() {
+        let alertViewController = AMZAlertController.alertControllerWithTitle("Uh-Oh", message: "Looks like you already set the location permissions.\n\nYou can update the authorization in Settings.")
+        alertViewController.addAction(AMZAlertAction(withTitle: "Go to Settings", style: .filled, handler: { (alertAction) in
+            UIApplication.shared.open(URL(string:UIApplicationOpenSettingsURLString)!, options:[:], completionHandler:nil)
+        }))
+        alertViewController.addAction(AMZAlertAction(withTitle: "Maybe Later", style: .normal, handler: nil))
+        present(alertViewController, animated: true, completion: nil)
     }
     
     // MARK: - UITableViewDataSource
@@ -116,38 +128,24 @@ class ExampleTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         switch section {
         case ExampleTableViewControllerSection.location.rawValue:
-            return locationManager.isLocationsAuthorized() ? 2 : 1
+            return ExampleTableViewControllerLocationRow.count.rawValue
         default:
             return 0
         }
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        var cell: UITableViewCell!
-        
-        switch indexPath.section {
-        case ExampleTableViewControllerSection.location.rawValue:
-            cell = locationCellForIndexPath(indexPath)
-        default:
-            cell = UITableViewCell()
-        }
-        
-        return cell
+        return locationCellForIndexPath(indexPath)
     }
-    
-    // MARK: - UITableViewDelegate
-    
 }
 
 extension ExampleTableViewController: PermissionPromptTableViewCellDelegate {
     func permissionPromptTableViewCell(_ permissionPromptTableViewCell: PermissionPromptTableViewCell, buttonPressed: Button) {
-        if !locationManager.requestLocationPermission(.authorizedAlways) {
-            let alertViewController = AMZAlertController.alertControllerWithTitle("Uh-Oh", message: "Looks like you already set the location permissions.\n\nYou can update the authorization in Settings.")
-            alertViewController.addAction(AMZAlertAction(withTitle: "Go to Settings", style: .filled, handler: { (alertAction) in
-                UIApplication.shared.open(URL(string:UIApplicationOpenSettingsURLString)!, options:[:], completionHandler:nil)
-            }))
-            alertViewController.addAction(AMZAlertAction(withTitle: "Maybe Later", style: .normal, handler: nil))
-            present(alertViewController, animated: true, completion: nil)
+        
+        if permissionPromptTableViewCell.permissionType == .locationAlways && !locationManager.requestLocationAlwaysPermission() {
+            showAuthorizationAlreadySetAlert()
+        } else if permissionPromptTableViewCell.permissionType == .locationWhenInUse && !locationManager.requestLocationWhenInUsePermission() {
+            showAuthorizationAlreadySetAlert()
         }
     }
 }
@@ -166,7 +164,7 @@ extension ExampleTableViewController: LocationTableViewCellDelegate {
     func locationTableViewCell(_ locationTableViewCell: LocationTableViewCell, locationButtonPressed locationButton: Button) {
         locationTableViewCell.state = .loading
         DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 1.0, execute: { // Add delay for smooth loading UI.
-            self.locationManager.startMonitoringLocationIfAuthorized()
+            self.locationManager.startMonitoringLocation()
         })
     }
 }

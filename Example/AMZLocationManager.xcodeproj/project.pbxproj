@@ -12,7 +12,6 @@
 		1A107FE1210A4BB3007762B3 /* ExampleTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A107FD9210A4BB3007762B3 /* ExampleTableViewController.swift */; };
 		1A107FE2210A4BB3007762B3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A107FDB210A4BB3007762B3 /* AppDelegate.swift */; };
 		1A107FE3210A4BB3007762B3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A107FDD210A4BB3007762B3 /* Images.xcassets */; };
-		608E48379087A6C0DCE7D2E6 /* Pods_AMZLocationManager_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3676E8BA10D00B953EA3C67F /* Pods_AMZLocationManager_Tests.framework */; };
 		870C3DA648BDF602181C17ED /* Pods_AMZLocationManager_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F5107F7F5A900FEC3A9FA1C /* Pods_AMZLocationManager_Example.framework */; };
 /* End PBXBuildFile section */
 
@@ -33,10 +32,7 @@
 		1A107FD9210A4BB3007762B3 /* ExampleTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExampleTableViewController.swift; sourceTree = "<group>"; };
 		1A107FDB210A4BB3007762B3 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1A107FDD210A4BB3007762B3 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		1A107FFB210A4C1B007762B3 /* AMZLocationManager_ExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AMZLocationManager_ExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		1A108006210A4C1C007762B3 /* AMZLocationManager_ExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AMZLocationManager_ExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3676E8BA10D00B953EA3C67F /* Pods_AMZLocationManager_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AMZLocationManager_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		469F366E168BCB1BB7D35B9C /* Pods-AMZLocationManager_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AMZLocationManager_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AMZLocationManager_Tests/Pods-AMZLocationManager_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* AMZLocationManager_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AMZLocationManager_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACE51AFB9204008FA782 /* AMZLocationManager_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AMZLocationManager_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		73C2E5DC4524FDE9C17E1E17 /* Pods-AMZLocationManager_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AMZLocationManager_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AMZLocationManager_Example/Pods-AMZLocationManager_Example.debug.xcconfig"; sourceTree = "<group>"; };
@@ -45,24 +41,9 @@
 		B1F58049672C05516840EF4B /* Pods-AMZLocationManager_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AMZLocationManager_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-AMZLocationManager_Example/Pods-AMZLocationManager_Example.release.xcconfig"; sourceTree = "<group>"; };
 		D73CE9E82D455A462AA27399 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		DF3545F3575E87DB105FDCA3 /* AMZLocationManager.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = AMZLocationManager.podspec; path = ../AMZLocationManager.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		EF9C76D107A905D28CE38AA9 /* Pods-AMZLocationManager_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AMZLocationManager_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AMZLocationManager_Tests/Pods-AMZLocationManager_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		1A107FF8210A4C1B007762B3 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		1A108003210A4C1C007762B3 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		607FACCD1AFB9204008FA782 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -75,7 +56,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				608E48379087A6C0DCE7D2E6 /* Pods_AMZLocationManager_Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -161,8 +141,6 @@
 			children = (
 				73C2E5DC4524FDE9C17E1E17 /* Pods-AMZLocationManager_Example.debug.xcconfig */,
 				B1F58049672C05516840EF4B /* Pods-AMZLocationManager_Example.release.xcconfig */,
-				EF9C76D107A905D28CE38AA9 /* Pods-AMZLocationManager_Tests.debug.xcconfig */,
-				469F366E168BCB1BB7D35B9C /* Pods-AMZLocationManager_Tests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -183,8 +161,6 @@
 			children = (
 				607FACD01AFB9204008FA782 /* AMZLocationManager_Example.app */,
 				607FACE51AFB9204008FA782 /* AMZLocationManager_Tests.xctest */,
-				1A107FFB210A4C1B007762B3 /* AMZLocationManager_ExampleTests.xctest */,
-				1A108006210A4C1C007762B3 /* AMZLocationManager_ExampleUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -202,40 +178,6 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		1A107FFA210A4C1B007762B3 /* AMZLocationManager_ExampleTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 1A108010210A4C1C007762B3 /* Build configuration list for PBXNativeTarget "AMZLocationManager_ExampleTests" */;
-			buildPhases = (
-				1A107FF7210A4C1B007762B3 /* Sources */,
-				1A107FF8210A4C1B007762B3 /* Frameworks */,
-				1A107FF9210A4C1B007762B3 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = AMZLocationManager_ExampleTests;
-			productName = AMZLocationManager_ExampleTests;
-			productReference = 1A107FFB210A4C1B007762B3 /* AMZLocationManager_ExampleTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		1A108005210A4C1C007762B3 /* AMZLocationManager_ExampleUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 1A108013210A4C1C007762B3 /* Build configuration list for PBXNativeTarget "AMZLocationManager_ExampleUITests" */;
-			buildPhases = (
-				1A108002210A4C1C007762B3 /* Sources */,
-				1A108003210A4C1C007762B3 /* Frameworks */,
-				1A108004210A4C1C007762B3 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = AMZLocationManager_ExampleUITests;
-			productName = AMZLocationManager_ExampleUITests;
-			productReference = 1A108006210A4C1C007762B3 /* AMZLocationManager_ExampleUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 		607FACCF1AFB9204008FA782 /* AMZLocationManager_Example */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 607FACEF1AFB9204008FA782 /* Build configuration list for PBXNativeTarget "AMZLocationManager_Example" */;
@@ -259,7 +201,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 607FACF21AFB9204008FA782 /* Build configuration list for PBXNativeTarget "AMZLocationManager_Tests" */;
 			buildPhases = (
-				27FAFAF7021BB0105D967A30 /* [CP] Check Pods Manifest.lock */,
 				607FACE11AFB9204008FA782 /* Sources */,
 				607FACE21AFB9204008FA782 /* Frameworks */,
 				607FACE31AFB9204008FA782 /* Resources */,
@@ -284,18 +225,6 @@
 				LastUpgradeCheck = 0940;
 				ORGANIZATIONNAME = CocoaPods;
 				TargetAttributes = {
-					1A107FFA210A4C1B007762B3 = {
-						CreatedOnToolsVersion = 10.0;
-						DevelopmentTeam = Z2H6FD46BJ;
-						ProvisioningStyle = Automatic;
-						TestTargetID = 1A107FE7210A4C19007762B3;
-					};
-					1A108005210A4C1C007762B3 = {
-						CreatedOnToolsVersion = 10.0;
-						DevelopmentTeam = Z2H6FD46BJ;
-						ProvisioningStyle = Automatic;
-						TestTargetID = 1A107FE7210A4C19007762B3;
-					};
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
 						DevelopmentTeam = Z2H6FD46BJ;
@@ -323,27 +252,11 @@
 			targets = (
 				607FACCF1AFB9204008FA782 /* AMZLocationManager_Example */,
 				607FACE41AFB9204008FA782 /* AMZLocationManager_Tests */,
-				1A107FFA210A4C1B007762B3 /* AMZLocationManager_ExampleTests */,
-				1A108005210A4C1C007762B3 /* AMZLocationManager_ExampleUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		1A107FF9210A4C1B007762B3 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		1A108004210A4C1C007762B3 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		607FACCE1AFB9204008FA782 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -364,24 +277,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		27FAFAF7021BB0105D967A30 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-AMZLocationManager_Tests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
 		76A5E53A94DECBECA80EA16F /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -427,20 +322,6 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		1A107FF7210A4C1B007762B3 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		1A108002210A4C1C007762B3 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		607FACCC1AFB9204008FA782 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -468,118 +349,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		1A108011210A4C1C007762B3 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Automatic;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEVELOPMENT_TEAM = Z2H6FD46BJ;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				INFOPLIST_FILE = AMZLocationManager_ExampleTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
-				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.appmazo.AMZLocationManager-ExampleTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AMZLocationManager_Example.app/AMZLocationManager_Example";
-			};
-			name = Debug;
-		};
-		1A108012210A4C1C007762B3 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = Z2H6FD46BJ;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				INFOPLIST_FILE = AMZLocationManager_ExampleTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.appmazo.AMZLocationManager-ExampleTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AMZLocationManager_Example.app/AMZLocationManager_Example";
-			};
-			name = Release;
-		};
-		1A108014210A4C1C007762B3 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Automatic;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEVELOPMENT_TEAM = Z2H6FD46BJ;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				INFOPLIST_FILE = AMZLocationManager_ExampleUITests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
-				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.appmazo.AMZLocationManager-ExampleUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = AMZLocationManager_Example;
-			};
-			name = Debug;
-		};
-		1A108015210A4C1C007762B3 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = Z2H6FD46BJ;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				INFOPLIST_FILE = AMZLocationManager_ExampleUITests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.appmazo.AMZLocationManager-ExampleUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = AMZLocationManager_Example;
-			};
-			name = Release;
-		};
 		607FACED1AFB9204008FA782 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -717,7 +486,6 @@
 		};
 		607FACF31AFB9204008FA782 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EF9C76D107A905D28CE38AA9 /* Pods-AMZLocationManager_Tests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -740,7 +508,6 @@
 		};
 		607FACF41AFB9204008FA782 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 469F366E168BCB1BB7D35B9C /* Pods-AMZLocationManager_Tests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -760,24 +527,6 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1A108010210A4C1C007762B3 /* Build configuration list for PBXNativeTarget "AMZLocationManager_ExampleTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				1A108011210A4C1C007762B3 /* Debug */,
-				1A108012210A4C1C007762B3 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		1A108013210A4C1C007762B3 /* Build configuration list for PBXNativeTarget "AMZLocationManager_ExampleUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				1A108014210A4C1C007762B3 /* Debug */,
-				1A108015210A4C1C007762B3 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		607FACCB1AFB9204008FA782 /* Build configuration list for PBXProject "AMZLocationManager" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

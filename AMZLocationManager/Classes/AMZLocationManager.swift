@@ -27,16 +27,26 @@ public class AMZLocationManager: NSObject {
         didSet {
             UserDefaults.standard.set(useCustomLocation, forKey: AMZLocationManagerShouldUseCustomLocationKey)
             UserDefaults.standard.synchronize()
-            startMonitoringLocationIfAuthorized()
+            useCustomLocation ? locationManager.stopUpdatingLocation() : startMonitoringLocation()
         }
     }
     
+    /**
+     The radius in miles the user must move in order for their location to be updated.
+     */
     public var distanceFilter: Double = 1609.34 * 1.0 { // Meters x Miles
         didSet {
             locationManager.distanceFilter = distanceFilter
         }
     }
 
+    /**
+     The desired accuracy of the user's location.
+     
+     **Default**
+    
+     kCLLocationAccuracyHundredMeters
+     */
     public var desiredAccuracy = kCLLocationAccuracyHundredMeters {
         didSet {
             locationManager.desiredAccuracy = desiredAccuracy
@@ -52,14 +62,45 @@ public class AMZLocationManager: NSObject {
         locationManager.distanceFilter = distanceFilter
         locationManager.desiredAccuracy = desiredAccuracy
         useCustomLocation = UserDefaults.standard.bool(forKey: AMZLocationManagerShouldUseCustomLocationKey)
-        startMonitoringLocationIfAuthorized()
+        
+        if canUseLocationTracking() {
+            startMonitoringLocation()
+        } else if let lastLocation = lastLocation() {
+            updateLocation(lastLocation)
+        }
     }
     
     // MARK: - AMZLocationManager
     
     // MARK: Permissions
     
-    public func requestLocationPermission(_ authorizationStatus: CLAuthorizationStatus) -> Bool {
+    /**
+     Requests authorization for location services always.
+     
+     - returns: true if successful request, false if the user had already approved/denied authorization.
+     */
+    public func requestLocationAlwaysPermission() -> Bool {
+        return requestLocationPermission(.authorizedAlways)
+    }
+    
+    /**
+     Requests authorization for location services when in use.
+     
+     - returns: true if successful request, false if the user had already approved/denied authorization.
+     */
+    public func requestLocationWhenInUsePermission() -> Bool {
+        return requestLocationPermission(.authorizedWhenInUse)
+    }
+    
+    /**
+     Requests authorization for location services.
+     
+     - parameters:
+        - authorizationStatus: The preferred CLAuthorizationStatus.
+
+     - returns: Bool
+     */
+    private func requestLocationPermission(_ authorizationStatus: CLAuthorizationStatus) -> Bool {
         guard CLLocationManager.authorizationStatus() == .notDetermined  else { return false }
         
         if authorizationStatus == .authorizedAlways {
@@ -70,54 +111,70 @@ public class AMZLocationManager: NSObject {
         return true
     }
     
+    /**
+     Determines if the user has authorized any location services.
+     
+     - returns: Bool
+     */
     public func isLocationsAuthorized() -> Bool {
         return isLocationAuthorizedWhenInUse() || isLocationAuthorizedAlways()
     }
     
+    /**
+     Determines if the user has authorized location services when in use.
+     
+     - returns: Bool
+     */
     public func isLocationAuthorizedWhenInUse() -> Bool {
         return CLLocationManager.authorizationStatus() == .authorizedWhenInUse
     }
     
+    /**
+     Determines if the user has authorized location services always.
+     
+     - returns: Bool
+     */
     public func isLocationAuthorizedAlways() -> Bool {
         return CLLocationManager.authorizationStatus() == .authorizedAlways
     }
     
     // MARK: Location Tracking
 
-    public func startMonitoringLocationIfAuthorized(_ completion: ((Error?) -> Void)? = nil) {
-        if useCustomLocation || !isLocationsAuthorized() {
-            isLocationUpdating = true
-            if let lastLocation = lastLocation() {
-                updateLocation(lastLocation)
-                
-                address(forLocation: lastLocation, completion: {[weak self] (addressString, error) in
-                    if let error = error {
-                        completion?(error)
-                    } else {
-                        self?.currentAddress = addressString
-                    }
-                    self?.isLocationUpdating = false
-                    self?.locationUpdatedBlock?(lastLocation)
-                })
-            } else {
-                isLocationUpdating = false
-            }
-        } else if isLocationsAuthorized() {
+    /**
+     Determines if the user has authorized location services and want to use their current location.
+     
+     - returns: Bool
+     */
+    private func canUseLocationTracking() -> Bool {
+        return isLocationsAuthorized() && !useCustomLocation
+    }
+    
+    /**
+     Starts monitoring the user's location if authorized and not using custom location.
+     */
+    public func startMonitoringLocation() {
+        if canUseLocationTracking() {
             isLocationUpdating = true
             locationManager.stopUpdatingLocation()
             locationManager.startUpdatingLocation()
         }
     }
     
-    private func stopUpdatingLocation() {
-        locationManager.stopUpdatingLocation()
-    }
-    
+    /**
+     Clears the location data.
+     */
     private func clearLocation() {
         updateLocation(nil)
         locationUpdatedBlock?(nil)
     }
 
+    /**
+     Retrieve a location from a provided address.
+     
+     - parameters:
+        - address: The address string.
+        - completion: The completion handler once the location is generated.
+     */
     private func location(forAddress address: String, completion: @escaping (CLLocation?, String?, Error?) -> ()) {
         CLGeocoder().geocodeAddressString(address) { [weak self] (placemarks, error) in
             if let placemark = placemarks?.first, let correctedAddressString = self?.address(forPlacemark: placemark), let location = placemark.location {
@@ -128,6 +185,11 @@ public class AMZLocationManager: NSObject {
         }
     }
 
+    /**
+     Get the last known location of the user.
+     
+     - returns: CLLocation
+     */
     private func lastLocation() -> CLLocation? {
         if let latitude = UserDefaults.standard.value(forKey: AMZLocationManagerLastLocationLatitudeKey) as? Double, let longitude = UserDefaults.standard.value(forKey: AMZLocationManagerLastLocationLongitudeKey) as? Double {
             return CLLocation(latitude: latitude, longitude: longitude)
@@ -136,6 +198,12 @@ public class AMZLocationManager: NSObject {
         return nil
     }
     
+    /**
+     Update the current location of the user.
+     
+     - parameters:
+        - location: CLLocation
+     */
     private func updateLocation(_ location: CLLocation?) {
         currentLocation = location
 
@@ -144,6 +212,7 @@ public class AMZLocationManager: NSObject {
             currentAddress = nil
             UserDefaults.standard.removeObject(forKey: AMZLocationManagerLastLocationLatitudeKey)
             UserDefaults.standard.removeObject(forKey: AMZLocationManagerLastLocationLongitudeKey)
+            UserDefaults.standard.synchronize()
             locationUpdatedBlock?(nil)
             return
         }
@@ -159,9 +228,17 @@ public class AMZLocationManager: NSObject {
         }
     }
     
+    /**
+     Update the current location of the user.
+     
+    - parameters:
+        - address: String
+        - completion: (String?, CLLocation?, Error?)
+     */
     public func updateLocation(forAddress address: String?, completion: @escaping (String?, CLLocation?, Error?) -> ()) {
         guard let address = address, address.count > 0 else {
             updateLocation(nil)
+            completion(nil, nil, nil)
             return
         }
         
@@ -176,6 +253,13 @@ public class AMZLocationManager: NSObject {
         }
     }
 
+    /**
+     Fetch the address for a provided location.
+     
+     - parameters:
+        - location: CLLocation
+        - completion: (String?, Error?)
+     */
     private func address(forLocation location: CLLocation, completion: @escaping (String?, Error?) -> ()) {
         CLGeocoder().reverseGeocodeLocation(location, completionHandler: {[weak self] (placemarks, error) -> Void in
             if let error = error {
@@ -186,6 +270,14 @@ public class AMZLocationManager: NSObject {
         })
     }
 
+    /**
+     Fetch the address for a provided CLPlacemark.
+     
+     - parameters:
+        - placemark: CLPlacemark
+     
+     - returns: String?
+     */
     private func address(forPlacemark placemark: CLPlacemark) -> String? {
         var address = ""
         if let city = placemark.locality, let state = placemark.administrativeArea, let postalCode = placemark.postalCode {
@@ -205,16 +297,18 @@ public class AMZLocationManager: NSObject {
 extension AMZLocationManager: CLLocationManagerDelegate {
     public func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
         guard status != .denied && status != .notDetermined else {
-            stopUpdatingLocation()
+            locationManager.stopUpdatingLocation()
             locationAuthorizationUpdatedBlock?(status)
             return
         }
         
-        startMonitoringLocationIfAuthorized()
+        startMonitoringLocation()
         locationAuthorizationUpdatedBlock?(status)
     }
     
     public func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-        updateLocation(locations.first)
+        if !useCustomLocation {
+            updateLocation(locations.first)
+        }
     }
 }
