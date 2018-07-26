@@ -1,6 +1,6 @@
 # AMZLocationManager
 
-[![CI Status](https://img.shields.io/travis/Appmazo/AMZLocationManager.svg?style=flat)](https://travis-ci.org/Appmazo/AMZLocationManager)
+[![CI Status](https://img.shields.io/travis/Appmazo/AMZLocationManager.svg?style=flat)](https://travis-ci.com/Appmazo/AMZLocationManager)
 [![Version](https://img.shields.io/cocoapods/v/AMZLocationManager.svg?style=flat)](https://cocoapods.org/pods/AMZLocationManager)
 [![License](https://img.shields.io/cocoapods/l/AMZLocationManager.svg?style=flat)](https://cocoapods.org/pods/AMZLocationManager)
 [![Platform](https://img.shields.io/cocoapods/p/AMZLocationManager.svg?style=flat)](https://cocoapods.org/pods/AMZLocationManager)
