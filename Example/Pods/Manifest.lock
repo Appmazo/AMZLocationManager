@@ -1,5 +1,5 @@
 PODS:
-  - AMZAlertController (1.0.2):
+  - AMZAlertController (1.0.3):
     - AppmazoUIKit (~> 1.0.4)
   - AMZLocationManager (1.0.0)
   - AppmazoFoundation (1.0.1)
@@ -22,7 +22,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  AMZAlertController: 30e75eba7d250adee9a3cbc43e3583b0fe2d67b9
+  AMZAlertController: 14ea30b988aab1190a4a6378485d6fe545dabf35
   AMZLocationManager: 736bcd22984d4584388867cb41584a67f31ae2e4
   AppmazoFoundation: 2b66a952d7a3a00ea77358ebc7171a8355002ecf
   AppmazoUIKit: 8a29e916ef1575fed28b16228e84dba8c75e6a89

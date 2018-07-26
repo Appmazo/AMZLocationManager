@@ -12,10 +12,6 @@
 		1A107FE1210A4BB3007762B3 /* ExampleTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A107FD9210A4BB3007762B3 /* ExampleTableViewController.swift */; };
 		1A107FE2210A4BB3007762B3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A107FDB210A4BB3007762B3 /* AppDelegate.swift */; };
 		1A107FE3210A4BB3007762B3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A107FDD210A4BB3007762B3 /* Images.xcassets */; };
-		1A108000210A4C1C007762B3 /* AMZLocationManager_ExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A107FFF210A4C1C007762B3 /* AMZLocationManager_ExampleTests.swift */; };
-		1A10800B210A4C1C007762B3 /* AMZLocationManager_ExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A10800A210A4C1C007762B3 /* AMZLocationManager_ExampleUITests.swift */; };
-		3FE03CAFFF87D869E0CE49CE /* Pods_AMLocationManager_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27A8AD80BE468A184FFFA5ED /* Pods_AMLocationManager_Tests.framework */; };
-		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
 		608E48379087A6C0DCE7D2E6 /* Pods_AMZLocationManager_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3676E8BA10D00B953EA3C67F /* Pods_AMZLocationManager_Tests.framework */; };
 		870C3DA648BDF602181C17ED /* Pods_AMZLocationManager_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F5107F7F5A900FEC3A9FA1C /* Pods_AMZLocationManager_Example.framework */; };
 /* End PBXBuildFile section */
@@ -37,28 +33,14 @@
 		1A107FD9210A4BB3007762B3 /* ExampleTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExampleTableViewController.swift; sourceTree = "<group>"; };
 		1A107FDB210A4BB3007762B3 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1A107FDD210A4BB3007762B3 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		1A107FEA210A4C1A007762B3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1A107FEC210A4C1A007762B3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		1A107FEF210A4C1A007762B3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		1A107FF1210A4C1B007762B3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		1A107FF4210A4C1B007762B3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		1A107FF6210A4C1B007762B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1A107FFB210A4C1B007762B3 /* AMZLocationManager_ExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AMZLocationManager_ExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		1A107FFF210A4C1C007762B3 /* AMZLocationManager_ExampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AMZLocationManager_ExampleTests.swift; sourceTree = "<group>"; };
-		1A108001210A4C1C007762B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1A108006210A4C1C007762B3 /* AMZLocationManager_ExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AMZLocationManager_ExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		1A10800A210A4C1C007762B3 /* AMZLocationManager_ExampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AMZLocationManager_ExampleUITests.swift; sourceTree = "<group>"; };
-		1A10800C210A4C1C007762B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		27A8AD80BE468A184FFFA5ED /* Pods_AMLocationManager_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AMLocationManager_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3676E8BA10D00B953EA3C67F /* Pods_AMZLocationManager_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AMZLocationManager_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		469F366E168BCB1BB7D35B9C /* Pods-AMZLocationManager_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AMZLocationManager_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AMZLocationManager_Tests/Pods-AMZLocationManager_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* AMZLocationManager_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AMZLocationManager_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACE51AFB9204008FA782 /* AMZLocationManager_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AMZLocationManager_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		73C2E5DC4524FDE9C17E1E17 /* Pods-AMZLocationManager_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AMZLocationManager_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AMZLocationManager_Example/Pods-AMZLocationManager_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		8C9301FD322DA9F9C47435E3 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		9088AC5E867478CF8F29F3E1 /* Pods_AMLocationManager_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AMLocationManager_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F5107F7F5A900FEC3A9FA1C /* Pods_AMZLocationManager_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AMZLocationManager_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1F58049672C05516840EF4B /* Pods-AMZLocationManager_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AMZLocationManager_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-AMZLocationManager_Example/Pods-AMZLocationManager_Example.release.xcconfig"; sourceTree = "<group>"; };
 		D73CE9E82D455A462AA27399 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
@@ -93,7 +75,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3FE03CAFFF87D869E0CE49CE /* Pods_AMLocationManager_Tests.framework in Frameworks */,
 				608E48379087A6C0DCE7D2E6 /* Pods_AMZLocationManager_Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -104,8 +85,6 @@
 		16B3520B53181F7E22EDA6DF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				9088AC5E867478CF8F29F3E1 /* Pods_AMLocationManager_Example.framework */,
-				27A8AD80BE468A184FFFA5ED /* Pods_AMLocationManager_Tests.framework */,
 				9F5107F7F5A900FEC3A9FA1C /* Pods_AMZLocationManager_Example.framework */,
 				3676E8BA10D00B953EA3C67F /* Pods_AMZLocationManager_Tests.framework */,
 			);
@@ -145,8 +124,8 @@
 		1A107FD7210A4BB3007762B3 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				1A107FD8210A4BB3007762B3 /* View Controllers */,
 				1A107FDA210A4BB3007762B3 /* Logic Controllers */,
+				1A107FD8210A4BB3007762B3 /* View Controllers */,
 			);
 			name = Controllers;
 			path = AMZLocationManager/Controllers;
@@ -177,37 +156,6 @@
 			path = AMZLocationManager/Assets;
 			sourceTree = "<group>";
 		};
-		1A107FE9210A4C1A007762B3 /* AMZLocationManager_Example */ = {
-			isa = PBXGroup;
-			children = (
-				1A107FEA210A4C1A007762B3 /* AppDelegate.swift */,
-				1A107FEC210A4C1A007762B3 /* ViewController.swift */,
-				1A107FEE210A4C1A007762B3 /* Main.storyboard */,
-				1A107FF1210A4C1B007762B3 /* Assets.xcassets */,
-				1A107FF3210A4C1B007762B3 /* LaunchScreen.storyboard */,
-				1A107FF6210A4C1B007762B3 /* Info.plist */,
-			);
-			path = AMZLocationManager_Example;
-			sourceTree = "<group>";
-		};
-		1A107FFE210A4C1C007762B3 /* AMZLocationManager_ExampleTests */ = {
-			isa = PBXGroup;
-			children = (
-				1A107FFF210A4C1C007762B3 /* AMZLocationManager_ExampleTests.swift */,
-				1A108001210A4C1C007762B3 /* Info.plist */,
-			);
-			path = AMZLocationManager_ExampleTests;
-			sourceTree = "<group>";
-		};
-		1A108009210A4C1C007762B3 /* AMZLocationManager_ExampleUITests */ = {
-			isa = PBXGroup;
-			children = (
-				1A10800A210A4C1C007762B3 /* AMZLocationManager_ExampleUITests.swift */,
-				1A10800C210A4C1C007762B3 /* Info.plist */,
-			);
-			path = AMZLocationManager_ExampleUITests;
-			sourceTree = "<group>";
-		};
 		213FEB014E770AF5B062C6B6 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -224,10 +172,6 @@
 			children = (
 				607FACF51AFB993E008FA782 /* Podspec Metadata */,
 				1A107EEB210A4B7F007762B3 /* Example */,
-				607FACE81AFB9204008FA782 /* Tests */,
-				1A107FE9210A4C1A007762B3 /* AMZLocationManager_Example */,
-				1A107FFE210A4C1C007762B3 /* AMZLocationManager_ExampleTests */,
-				1A108009210A4C1C007762B3 /* AMZLocationManager_ExampleUITests */,
 				607FACD11AFB9204008FA782 /* Products */,
 				213FEB014E770AF5B062C6B6 /* Pods */,
 				16B3520B53181F7E22EDA6DF /* Frameworks */,
@@ -243,23 +187,6 @@
 				1A108006210A4C1C007762B3 /* AMZLocationManager_ExampleUITests.xctest */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		607FACE81AFB9204008FA782 /* Tests */ = {
-			isa = PBXGroup;
-			children = (
-				607FACEB1AFB9204008FA782 /* Tests.swift */,
-				607FACE91AFB9204008FA782 /* Supporting Files */,
-			);
-			path = Tests;
-			sourceTree = "<group>";
-		};
-		607FACE91AFB9204008FA782 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				607FACEA1AFB9204008FA782 /* Info.plist */,
-			);
-			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		607FACF51AFB993E008FA782 /* Podspec Metadata */ = {
@@ -504,7 +431,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1A108000210A4C1C007762B3 /* AMZLocationManager_ExampleTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -512,7 +438,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1A10800B210A4C1C007762B3 /* AMZLocationManager_ExampleUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -529,7 +454,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				607FACEC1AFB9204008FA782 /* Tests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -542,25 +466,6 @@
 			targetProxy = 607FACE61AFB9204008FA782 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		1A107FEE210A4C1A007762B3 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				1A107FEF210A4C1A007762B3 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		1A107FF3210A4C1B007762B3 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				1A107FF4210A4C1B007762B3 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		1A108011210A4C1C007762B3 /* Debug */ = {

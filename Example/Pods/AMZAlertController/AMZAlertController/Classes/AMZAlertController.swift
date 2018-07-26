@@ -1,6 +1,6 @@
 //
-//  AlertController.swift
-//  AlertController
+//  AMZAlertController.swift
+//  AMZAlertController
 //
 //  Created by James Hickman on 5/13/18.
 //  Copyright © 2018 Appmazo, LLC. All rights reserved.
@@ -9,7 +9,7 @@
 import UIKit
 import AppmazoUIKit
 
-public class AlertController: UIViewController {
+public class AMZAlertController: UIViewController {
     private var modalTransitioning = ModalTransitioning()
     
     private var containerView = UIView()
@@ -25,7 +25,7 @@ public class AlertController: UIViewController {
     public var titleLabel = UILabel()
     public var messageLabel = UILabel()
 
-    private var actions = [AlertAction]()
+    private var actions = [AMZAlertAction]()
     
     /**
      The style for the Alert Controller's background.
@@ -79,8 +79,8 @@ public class AlertController: UIViewController {
         - title: The title for the Alert Controller.
         - message: The message for the Alert Controller.
      */
-    public class func alertControllerWithTitle(_ title: String, message: String) -> AlertController {
-        return AlertController(withTitle: title, message: message, attributedMessage: nil, customView: nil)
+    public class func alertControllerWithTitle(_ title: String, message: String) -> AMZAlertController {
+        return AMZAlertController(withTitle: title, message: message, attributedMessage: nil, customView: nil)
     }
     
     /**
@@ -90,8 +90,8 @@ public class AlertController: UIViewController {
         - title: The title for the Alert Controller.
         - attributedMessage: The attributed message for the Alert Controller.
      */
-    public class func alertControllerWithTitle(_ title: String, attributedMessage: NSAttributedString) -> AlertController {
-        return AlertController(withTitle: title, message: nil, attributedMessage: attributedMessage, customView: nil)
+    public class func alertControllerWithTitle(_ title: String, attributedMessage: NSAttributedString) -> AMZAlertController {
+        return AMZAlertController(withTitle: title, message: nil, attributedMessage: attributedMessage, customView: nil)
     }
     
     /**
@@ -100,8 +100,8 @@ public class AlertController: UIViewController {
      - parameters:
         - customView: A custom view to use for the main content of the Alert Controller..
      */
-    public class func alertControllerWithCustomView(_ customView: UIView) -> AlertController {
-        return AlertController(withTitle: nil, message: nil, attributedMessage: nil, customView: customView)
+    public class func alertControllerWithCustomView(_ customView: UIView) -> AMZAlertController {
+        return AMZAlertController(withTitle: nil, message: nil, attributedMessage: nil, customView: customView)
     }
     
     /**
@@ -161,7 +161,7 @@ public class AlertController: UIViewController {
         addActionConstraints()
     }
     
-    // MARK: - AlertController
+    // MARK: - AMZAlertController
     
     /**
      Adds an Alert Action to the Alert Controller.
@@ -169,7 +169,7 @@ public class AlertController: UIViewController {
      - parameters:
         - action: The Alert Action to add.
      */
-    public func addAction(_ action: AlertAction) {
+    public func addAction(_ action: AMZAlertAction) {
         action.delegate = self
         actions.append(action)
     }
@@ -180,7 +180,7 @@ public class AlertController: UIViewController {
      - parameters:
         - actions: An array of Alert Actions to add.
      */
-    public func addActions(_ actions: [AlertAction]) {
+    public func addActions(_ actions: [AMZAlertAction]) {
         for action in actions {
             action.delegate = self
             self.actions.append(action)
@@ -303,8 +303,8 @@ public class AlertController: UIViewController {
     }
 }
 
-extension AlertController: AlertActionDelegate {
-    func alertActionPressed(_ alertAction: AlertAction) {
+extension AMZAlertController: AMZAlertActionDelegate {
+    func alertActionPressed(_ alertAction: AMZAlertAction) {
         dismiss(animated: true, completion: {
             alertAction.handler?(alertAction)
         })

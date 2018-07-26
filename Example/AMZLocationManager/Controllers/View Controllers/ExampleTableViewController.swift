@@ -6,17 +6,18 @@
 //  Copyright © 2018 CocoaPods. All rights reserved.
 //
 
-import AppmazoUIKit
 import AMZLocationManager
+
+import AppmazoUIKit
 import AMZAlertController
 
 class ExampleTableViewController: UITableViewController {
-    private enum LocationManagerTableViewControllerSection: Int {
+    private enum ExampleTableViewControllerSection: Int {
         case location
         case count
     }
     
-    private enum LocationManagerTableViewControllerLocationRow: Int {
+    private enum ExampleTableViewControllerLocationRow: Int {
         case currentLocation
         case locationAddress
         case count
@@ -50,12 +51,12 @@ class ExampleTableViewController: UITableViewController {
         }
     }
     
-    // MARK: - LocationManagerTableViewController
+    // MARK: - ExampleTableViewController
     
     private func locationCellForIndexPath(_ indexPath: IndexPath) -> UITableViewCell {
         if locationManager.isLocationsAuthorized() {
             switch indexPath.row {
-            case LocationManagerTableViewControllerLocationRow.currentLocation.rawValue:
+            case ExampleTableViewControllerLocationRow.currentLocation.rawValue:
                 let cell = tableView.dequeueReusableCell(withIdentifier: UITableViewCell.reuseIdentifier, for: indexPath)
                 cell.selectionStyle = .none
                 cell.textLabel?.text = "Use Current Location"
@@ -65,7 +66,7 @@ class ExampleTableViewController: UITableViewController {
                 locationSwitch.addTarget(self, action: #selector(locationSwitchUpdated(_:)), for: .valueChanged)
                 cell.accessoryView = locationSwitch
                 return cell
-            case LocationManagerTableViewControllerLocationRow.locationAddress.rawValue:
+            case ExampleTableViewControllerLocationRow.locationAddress.rawValue:
                 if let cell = tableView.dequeueReusableCell(withIdentifier: LocationTableViewCell.reuseIdentifier, for: indexPath) as? LocationTableViewCell {
                     cell.delegate = self
                     
@@ -109,12 +110,12 @@ class ExampleTableViewController: UITableViewController {
     // MARK: - UITableViewDataSource
     
     override func numberOfSections(in tableView: UITableView) -> Int {
-        return LocationManagerTableViewControllerSection.count.rawValue
+        return ExampleTableViewControllerSection.count.rawValue
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         switch section {
-        case LocationManagerTableViewControllerSection.location.rawValue:
+        case ExampleTableViewControllerSection.location.rawValue:
             return locationManager.isLocationsAuthorized() ? 2 : 1
         default:
             return 0
@@ -125,7 +126,7 @@ class ExampleTableViewController: UITableViewController {
         var cell: UITableViewCell!
         
         switch indexPath.section {
-        case LocationManagerTableViewControllerSection.location.rawValue:
+        case ExampleTableViewControllerSection.location.rawValue:
             cell = locationCellForIndexPath(indexPath)
         default:
             cell = UITableViewCell()
@@ -141,11 +142,11 @@ class ExampleTableViewController: UITableViewController {
 extension ExampleTableViewController: PermissionPromptTableViewCellDelegate {
     func permissionPromptTableViewCell(_ permissionPromptTableViewCell: PermissionPromptTableViewCell, buttonPressed: Button) {
         if !locationManager.requestLocationPermission(.authorizedAlways) {
-            let alertViewController = AlertController.alertControllerWithTitle("Uh-Oh", message: "Looks like you already set the location permissions.\n\nYou can update the authorization in Settings.")
-            alertViewController.addAction(AlertAction(withTitle: "Go to Settings", style: .filled, handler: { (alertAction) in
+            let alertViewController = AMZAlertController.alertControllerWithTitle("Uh-Oh", message: "Looks like you already set the location permissions.\n\nYou can update the authorization in Settings.")
+            alertViewController.addAction(AMZAlertAction(withTitle: "Go to Settings", style: .filled, handler: { (alertAction) in
                 UIApplication.shared.open(URL(string:UIApplicationOpenSettingsURLString)!, options:[:], completionHandler:nil)
             }))
-            alertViewController.addAction(AlertAction(withTitle: "Maybe Later", style: .normal, handler: nil))
+            alertViewController.addAction(AMZAlertAction(withTitle: "Maybe Later", style: .normal, handler: nil))
             present(alertViewController, animated: true, completion: nil)
         }
     }
