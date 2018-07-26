@@ -113,7 +113,7 @@ func updateLocation(forAddress address: String?, completion: @escaping (String?,
 
 ## Author
 
-nitwitstudios, jhickman@appmazo.com
+Appmazo LLC, jhickman@appmazo.com
 
 ## License
 

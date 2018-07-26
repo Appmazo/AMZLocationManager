@@ -2,8 +2,8 @@
 //  AppDelegate.swift
 //  AMZLocationManager
 //
-//  Created by nitwitstudios on 07/24/2018.
-//  Copyright (c) 2018 nitwitstudios. All rights reserved.
+//  Created by James Hickman on 07/24/2018.
+//  Copyright (c) 2018 Appmazo LLC. All rights reserved.
 //
 
 import UIKit
