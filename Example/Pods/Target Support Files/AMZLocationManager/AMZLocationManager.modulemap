@@ -1,0 +1,6 @@
+framework module AMZLocationManager {
+  umbrella header "AMZLocationManager-umbrella.h"
+
+  export *
+  module * { export * }
+}

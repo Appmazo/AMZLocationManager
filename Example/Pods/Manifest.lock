@@ -1,0 +1,32 @@
+PODS:
+  - AMZAlertController (1.0.2):
+    - AppmazoUIKit (~> 1.0.4)
+  - AMZLocationManager (1.0.0)
+  - AppmazoFoundation (1.0.1)
+  - AppmazoUIKit (1.0.6):
+    - AppmazoFoundation (~> 1.0.1)
+
+DEPENDENCIES:
+  - AMZAlertController
+  - AMZLocationManager (from `../`)
+  - AppmazoUIKit
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - AMZAlertController
+    - AppmazoFoundation
+    - AppmazoUIKit
+
+EXTERNAL SOURCES:
+  AMZLocationManager:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  AMZAlertController: 30e75eba7d250adee9a3cbc43e3583b0fe2d67b9
+  AMZLocationManager: 736bcd22984d4584388867cb41584a67f31ae2e4
+  AppmazoFoundation: 2b66a952d7a3a00ea77358ebc7171a8355002ecf
+  AppmazoUIKit: 8a29e916ef1575fed28b16228e84dba8c75e6a89
+
+PODFILE CHECKSUM: f0cad02a0554c1a3daf9bd1f52a2549bf5eae0bb
+
+COCOAPODS: 1.5.3

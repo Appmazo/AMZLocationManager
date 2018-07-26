@@ -1,9 +1,12 @@
+platform :ios, '11.0'
 use_frameworks!
 
-target 'AMLocationManager_Example' do
-  pod 'AMLocationManager', :path => '../'
+target 'AMZLocationManager_Example' do
+  pod 'AMZLocationManager', :path => '../'
+  pod 'AppmazoUIKit'
+  pod 'AMZAlertController'
 
-  target 'AMLocationManager_Tests' do
+  target 'AMZLocationManager_Tests' do
     inherit! :search_paths
 
     
