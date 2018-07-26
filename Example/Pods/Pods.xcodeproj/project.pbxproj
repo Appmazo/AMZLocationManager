@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		05173F581FE779ACCB1D165409EE202B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAE83EF593605EE7258C459492B616FE /* Foundation.framework */; };
 		063A2A79052DADC529BE696B71AA5A90 /* ButtonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0359A400B9BFD46855EC7074F2B681 /* ButtonTableViewCell.swift */; };
 		09FC63F33CCB534F1BFEE55170C65DB7 /* SubtitleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF71627A11BB942CE39E8BD635053CBA /* SubtitleTableViewCell.swift */; };
 		0E00F6CC5DB5EEB642FF82A84DE838A6 /* AppmazoUIKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 83D1FE56568FE0E7BE8E41A3E1D918B7 /* AppmazoUIKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -18,27 +17,26 @@
 		357598B2E77BE8CD487CD7C548846109 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAE83EF593605EE7258C459492B616FE /* Foundation.framework */; };
 		3660959B84DBAD15AF8016194E0B6E8A /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 970F9754C4615D4045C03DA17E36AAF7 /* UIView+Extensions.swift */; };
 		47234803610F2D249558358913F3409C /* AppmazoFoundation-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CC69A96E82BB18F0954714744C3B6AE4 /* AppmazoFoundation-dummy.m */; };
-		4BE6102696B86E271E5C39F60F16D4FF /* AMZAlertController-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 39DA1EB70E3EF7057FF014FD652589CD /* AMZAlertController-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4BE6102696B86E271E5C39F60F16D4FF /* AMZAlertController-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = ACB3AAB99E54159878FAD9F602886C24 /* AMZAlertController-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4D9CE915786EAD99051A783C46031697 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAE83EF593605EE7258C459492B616FE /* Foundation.framework */; };
 		4EFF103E7D19DA68ABAE122AFD47FAA4 /* UITabBarController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8488CD1FF4C498327F923747A6E9F7D9 /* UITabBarController+Extensions.swift */; };
 		4FA8C6452265EF3AD9D8463F67DA3B96 /* ModalTransitioning.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CF7594EA5CC2DEF1D78AAE806ABE15F /* ModalTransitioning.swift */; };
-		5099A3393004EE39B466A27005B34709 /* Pods-AMZLocationManager_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 02C6FDBB67C26B64C94DDEFD053DD460 /* Pods-AMZLocationManager_Example-dummy.m */; };
-		5332399781D1F905757EE95C4BAE5512 /* AlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8327FCAFA25B6603BAEC69C7EC385FB /* AlertController.swift */; };
+		5099A3393004EE39B466A27005B34709 /* Pods-AMZLocationManager_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 557E4B557C857B1897B483815C551731 /* Pods-AMZLocationManager_Example-dummy.m */; };
 		543943B2516E325662B5827F928C8832 /* Bundle+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD099CE6119C9EFB8E7E52587C9A46B /* Bundle+Extensions.swift */; };
 		5532F708CFA914F6A078517087BCA906 /* FormFieldTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D354AE10B490C371605E9F94EA1C53 /* FormFieldTableViewCell.swift */; };
 		5C52EE6AC29A23512BAF40613CC11692 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAE83EF593605EE7258C459492B616FE /* Foundation.framework */; };
-		6BE1AD0DEE8142987D836CCAA2A0A78A /* Pods-AMZLocationManager_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9817AD1FB225796DC684112834E0FA36 /* Pods-AMZLocationManager_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5FA02E334596EC789E19C5C44CF3DE7D /* AMZAlertController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7960722CC94274273A57ED22028D6A08 /* AMZAlertController-dummy.m */; };
+		652A53B7E98359A2164B0E63D426C04B /* AMZAlertAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70FC8D5EC09282E84ECD07B577278C74 /* AMZAlertAction.swift */; };
+		6BE1AD0DEE8142987D836CCAA2A0A78A /* Pods-AMZLocationManager_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5022B7307D799B1028451398EEED1261 /* Pods-AMZLocationManager_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		70601CC408D7CF522C52995F41FDDF46 /* KeychainPasswordItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53C1F55B9EB4024DF1C46C38D3FC269 /* KeychainPasswordItem.swift */; };
-		711A8AF1E47BF45BE384C5B5583E7694 /* AMZAlertController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7494742D8DD97176B4104E7E6D5FA306 /* AMZAlertController-dummy.m */; };
 		7F0BA36EF98DA7729F364CF2FADDFBAA /* AppmazoUIKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AB3D3E7878C36A8BBF2D49D4A8814375 /* AppmazoUIKit-dummy.m */; };
-		80D5A8CFFE60131D2C09FAED5AF975D8 /* Pods-AMZLocationManager_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 980C73A306124496503A0990BA9B665B /* Pods-AMZLocationManager_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8CAE5893B599AAD351F20E8076B111FC /* Pods-AMZLocationManager_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B0D3EB2C5BC0EEF47AC9C685C0710D77 /* Pods-AMZLocationManager_Tests-dummy.m */; };
 		965D3374E9A950418DABE3DCAEF967FC /* AMZLocationManager-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 03E308CB1606B23F545CCD3BDFDAD11F /* AMZLocationManager-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9AC93910FFD5FDB1FE9D4E0766F340E0 /* TextFormFieldTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 152725B2CCA421FD29B71DD2DBED95FE /* TextFormFieldTableViewCell.swift */; };
 		9B7253BF5116202403194A0ABEE05694 /* Date+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B579D0A6BE977AEC9782FBCADAC37461 /* Date+Extensions.swift */; };
 		9BAADAD7FFE76E0415FC1BD739DDFDF4 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF45B8B27B30DF99653681FC92C3B09A /* String+Extensions.swift */; };
 		A2AE83222D0DC81541343B4E27B3B5FD /* AMZLocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DAD5B42C6A67506889DF03F0057C0C9 /* AMZLocationManager.swift */; };
 		ABF48D2BFA6C03963B3A31F2EA0DA7EC /* ReuseIdentifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 331A0AECB93EC28B31EDD673F5037EA2 /* ReuseIdentifiable.swift */; };
+		AD1EA455ACA9F5EFD60ACAB37F1C781B /* AMZAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC9E8C5115174C01029F75E835C3FE7 /* AMZAlertController.swift */; };
 		AFF2F02F197E0AE5AEC8BA9E024E6B37 /* UIScreen+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A373B65BEA57A4E8CDDEAD32858C75CE /* UIScreen+Extensions.swift */; };
 		B020D47C58E4AF6D6DDDF5CE5B8FC07B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAE83EF593605EE7258C459492B616FE /* Foundation.framework */; };
 		B2486BF479297E5311BA3C99BE50A7B9 /* LocationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF6A4399AD975976BB1FADC25A7E4EF8 /* LocationTableViewCell.swift */; };
@@ -53,7 +51,6 @@
 		D352FF38137D51D9A0DE29BF9623E608 /* UIScrollView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00DE9923DB911E543D0BC836448D4F76 /* UIScrollView+Extensions.swift */; };
 		D64EBEE3B9852CFCA23030B60D3B1FEA /* AppmazoFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD27EFCB777C7BF3B29BC5CF595B533A /* AppmazoFoundation.framework */; };
 		DB9E8E6551B6A4BAD50A8AB05D973763 /* AppmazoFoundation-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A1A6B8C9509DA6AE10B5862A2639F837 /* AppmazoFoundation-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E7DCEC1CD5952C0AB902A8E6066B93D2 /* AlertAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 355B2C59BF8CA1ED7CBD58D6C62A3B57 /* AlertAction.swift */; };
 		EFE9D287E41C044ACC57F7E0CBFC864B /* AMZLocationManager-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F8A5AE82F91A54A51A8FAC3DF8A6800D /* AMZLocationManager-dummy.m */; };
 		F9991056969B1440B147EE385D9C456B /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C202E8E2EFF6D9440BE24F49E597612 /* Button.swift */; };
 		FF0B317757611D512F08F10B41A6B166 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAE83EF593605EE7258C459492B616FE /* Foundation.framework */; };
@@ -89,13 +86,6 @@
 			remoteGlobalIDString = AC10538F3ABF01A263CE187E3475178E;
 			remoteInfo = AppmazoFoundation;
 		};
-		95C777437A16BFA26D2338F753F92E9A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 6417558FB01D6622F4497CD20A6D3A6E;
-			remoteInfo = "Pods-AMZLocationManager_Example";
-		};
 		A4BE9B55F0F283082092F1F29093710A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
@@ -121,91 +111,80 @@
 
 /* Begin PBXFileReference section */
 		00DE9923DB911E543D0BC836448D4F76 /* UIScrollView+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIScrollView+Extensions.swift"; path = "AppmazoFoundation/Classes/Extensions/UIScrollView+Extensions.swift"; sourceTree = "<group>"; };
-		011483561B3E20EC3ACCD04B969C7E29 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		02C6FDBB67C26B64C94DDEFD053DD460 /* Pods-AMZLocationManager_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AMZLocationManager_Example-dummy.m"; sourceTree = "<group>"; };
+		011483561B3E20EC3ACCD04B969C7E29 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
 		030410ED4902EE368B60E170B91C4F8F /* URL+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "URL+Extensions.swift"; path = "AppmazoFoundation/Classes/Extensions/URL+Extensions.swift"; sourceTree = "<group>"; };
 		03E308CB1606B23F545CCD3BDFDAD11F /* AMZLocationManager-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AMZLocationManager-umbrella.h"; sourceTree = "<group>"; };
 		044D43B19C66D0FDB9B6CD51340EF5AE /* AppmazoUIKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AppmazoUIKit.xcconfig; sourceTree = "<group>"; };
+		0500E34317CD08D3EAFA13685F8D032D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0AC126DBECCC2CFD3DF142499CE7636B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0C202E8E2EFF6D9440BE24F49E597612 /* Button.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Button.swift; path = AppmazoUIKit/Classes/Elements/Button.swift; sourceTree = "<group>"; };
 		152725B2CCA421FD29B71DD2DBED95FE /* TextFormFieldTableViewCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TextFormFieldTableViewCell.swift; path = "AppmazoUIKit/Classes/Cells/Table/Form Fields/TextFormFieldTableViewCell.swift"; sourceTree = "<group>"; };
-		16A9E6D9B989E2415321CB8CF9F23439 /* Pods_AMZLocationManager_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AMZLocationManager_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		197702E2CA3D2CAD5E8C2D9CD480E241 /* QuantityFormFieldTableViewCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = QuantityFormFieldTableViewCell.swift; path = "AppmazoUIKit/Classes/Cells/Table/Form Fields/QuantityFormFieldTableViewCell.swift"; sourceTree = "<group>"; };
 		1A5834017E31B8AA18344343770557D6 /* AMZLocationManager.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AMZLocationManager.xcconfig; sourceTree = "<group>"; };
-		1C166CB6D19AEAFFCB26AFE1D8957F8B /* AMZAlertController.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = AMZAlertController.modulemap; sourceTree = "<group>"; };
+		1A9A798FE803D00DDE8E0BD3E12F1B35 /* Pods-AMZLocationManager_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AMZLocationManager_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		210A8C090862A66E9A1304E90553A9A0 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2AF881A8043A705E231F6294CF95EA4C /* Pods-AMZLocationManager_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AMZLocationManager_Example-resources.sh"; sourceTree = "<group>"; };
 		331A0AECB93EC28B31EDD673F5037EA2 /* ReuseIdentifiable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReuseIdentifiable.swift; path = AppmazoFoundation/Classes/Protocols/ReuseIdentifiable.swift; sourceTree = "<group>"; };
-		355B2C59BF8CA1ED7CBD58D6C62A3B57 /* AlertAction.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AlertAction.swift; path = AlertController/Classes/AlertAction.swift; sourceTree = "<group>"; };
-		39DA1EB70E3EF7057FF014FD652589CD /* AMZAlertController-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AMZAlertController-umbrella.h"; sourceTree = "<group>"; };
 		3CD099CE6119C9EFB8E7E52587C9A46B /* Bundle+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Bundle+Extensions.swift"; path = "AppmazoFoundation/Classes/Extensions/Bundle+Extensions.swift"; sourceTree = "<group>"; };
-		3CF4FDFD74E0F486E76F59D1EF02F68A /* Pods-AMZLocationManager_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AMZLocationManager_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		4D0E2A4978DD86E489ACD37A39A5023B /* Pods_AMZLocationManager_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AMZLocationManager_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		50D6A69E7FD34C1D3E18FFA742872BE6 /* Pods-AMZLocationManager_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-AMZLocationManager_Tests.modulemap"; sourceTree = "<group>"; };
+		5022B7307D799B1028451398EEED1261 /* Pods-AMZLocationManager_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-AMZLocationManager_Example-umbrella.h"; sourceTree = "<group>"; };
+		527393662836E14CA7167DD9E69D3784 /* Pods-AMZLocationManager_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AMZLocationManager_Example-frameworks.sh"; sourceTree = "<group>"; };
+		557E4B557C857B1897B483815C551731 /* Pods-AMZLocationManager_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AMZLocationManager_Example-dummy.m"; sourceTree = "<group>"; };
 		5CF7594EA5CC2DEF1D78AAE806ABE15F /* ModalTransitioning.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ModalTransitioning.swift; path = AppmazoUIKit/Classes/Transitions/ModalTransitioning.swift; sourceTree = "<group>"; };
 		5DAD5B42C6A67506889DF03F0057C0C9 /* AMZLocationManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AMZLocationManager.swift; path = AMZLocationManager/Classes/AMZLocationManager.swift; sourceTree = "<group>"; };
-		6422BA7F640265E4BBA7A16C3FA51762 /* Pods-AMZLocationManager_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AMZLocationManager_Tests-frameworks.sh"; sourceTree = "<group>"; };
-		6523C416924314284EB5F2AD5BA50FFC /* Pods-AMZLocationManager_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-AMZLocationManager_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		61535D792FE2C7BFBBC245CA6666DEA7 /* Pods-AMZLocationManager_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AMZLocationManager_Example.release.xcconfig"; sourceTree = "<group>"; };
+		6429DFBEEC62BD843E116BBF8BDE3AD8 /* Pods-AMZLocationManager_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-AMZLocationManager_Example.modulemap"; sourceTree = "<group>"; };
 		67EE7A0CE404F2680924241DC023779E /* AppmazoUIKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AppmazoUIKit-prefix.pch"; sourceTree = "<group>"; };
 		6A80833405D9D156B106CACA9BA865E4 /* Assets.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = AppmazoUIKit/Assets/Assets.xcassets; sourceTree = "<group>"; };
-		6BD8B37A5E3FF60A997FFD348D32AC51 /* AMZAlertController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AMZAlertController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		70FC8D5EC09282E84ECD07B577278C74 /* AMZAlertAction.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AMZAlertAction.swift; path = AMZAlertController/Classes/AMZAlertAction.swift; sourceTree = "<group>"; };
 		71FAAB5C39A178695593968821565D91 /* AppmazoFoundation.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AppmazoFoundation.xcconfig; sourceTree = "<group>"; };
-		7494742D8DD97176B4104E7E6D5FA306 /* AMZAlertController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AMZAlertController-dummy.m"; sourceTree = "<group>"; };
-		772EA064B353FCE0E586BA729C781B75 /* Pods-AMZLocationManager_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AMZLocationManager_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		7ADCA5BA99061A09669C95F6FA825677 /* Pods-AMZLocationManager_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AMZLocationManager_Tests-resources.sh"; sourceTree = "<group>"; };
+		723D7482E2D076D0B40D35ED1EFE8C2B /* Pods-AMZLocationManager_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AMZLocationManager_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		75C99341D4C264050F47FAA563F0712C /* AMZLocationManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = AMZLocationManager.framework; path = AMZLocationManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7960722CC94274273A57ED22028D6A08 /* AMZAlertController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AMZAlertController-dummy.m"; sourceTree = "<group>"; };
+		79C3A7DFBC11E733E338329F6D38B070 /* AMZAlertController.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = AMZAlertController.modulemap; sourceTree = "<group>"; };
 		7DF799B354BA8EB5AD3E97AE0B5FBE85 /* AMZLocationManager.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = AMZLocationManager.modulemap; sourceTree = "<group>"; };
 		7F20D66A86E7F0D06D60CFAB996CF5A7 /* Storyboardable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Storyboardable.swift; path = AppmazoFoundation/Classes/Protocols/Storyboardable.swift; sourceTree = "<group>"; };
 		83D1FE56568FE0E7BE8E41A3E1D918B7 /* AppmazoUIKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AppmazoUIKit-umbrella.h"; sourceTree = "<group>"; };
 		8488CD1FF4C498327F923747A6E9F7D9 /* UITabBarController+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UITabBarController+Extensions.swift"; path = "AppmazoFoundation/Classes/Extensions/UITabBarController+Extensions.swift"; sourceTree = "<group>"; };
 		895A3A419292003FECF61F6A432441AD /* Application+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Application+Extensions.swift"; path = "AppmazoFoundation/Classes/Extensions/Application+Extensions.swift"; sourceTree = "<group>"; };
 		8CD08A254514768DFA78B412EB53D921 /* AppmazoFoundation.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = AppmazoFoundation.modulemap; sourceTree = "<group>"; };
-		8D5AC1BEF2DBCA6B4055043F7205B538 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		91D354AE10B490C371605E9F94EA1C53 /* FormFieldTableViewCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FormFieldTableViewCell.swift; path = "AppmazoUIKit/Classes/Cells/Table/Form Fields/FormFieldTableViewCell.swift"; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		93C43D39E8D9591A01198A0BEDF8CC9C /* AppmazoUIKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AppmazoUIKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9430A4DDB643E85B4F1F816D758C0AFD /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		970F9754C4615D4045C03DA17E36AAF7 /* UIView+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+Extensions.swift"; path = "AppmazoFoundation/Classes/Extensions/UIView+Extensions.swift"; sourceTree = "<group>"; };
-		980C73A306124496503A0990BA9B665B /* Pods-AMZLocationManager_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-AMZLocationManager_Tests-umbrella.h"; sourceTree = "<group>"; };
-		9817AD1FB225796DC684112834E0FA36 /* Pods-AMZLocationManager_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-AMZLocationManager_Example-umbrella.h"; sourceTree = "<group>"; };
 		A1A6B8C9509DA6AE10B5862A2639F837 /* AppmazoFoundation-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AppmazoFoundation-umbrella.h"; sourceTree = "<group>"; };
+		A28DDC11181C2E383D5DB45B643DA237 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A30BD4281F5C4C515748DA0EEF294783 /* DatePickerTableViewCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DatePickerTableViewCell.swift; path = AppmazoUIKit/Classes/Cells/Table/DatePickerTableViewCell.swift; sourceTree = "<group>"; };
 		A373B65BEA57A4E8CDDEAD32858C75CE /* UIScreen+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIScreen+Extensions.swift"; path = "AppmazoFoundation/Classes/Extensions/UIScreen+Extensions.swift"; sourceTree = "<group>"; };
 		A4020EBC805311B01E369E211B68777A /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIViewController+Extensions.swift"; path = "AppmazoFoundation/Classes/Extensions/UIViewController+Extensions.swift"; sourceTree = "<group>"; };
 		A4BF33AC4A891AE2BBF07127EC54056E /* DateFormFieldTableViewCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DateFormFieldTableViewCell.swift; path = "AppmazoUIKit/Classes/Cells/Table/Form Fields/DateFormFieldTableViewCell.swift"; sourceTree = "<group>"; };
 		A53C1F55B9EB4024DF1C46C38D3FC269 /* KeychainPasswordItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KeychainPasswordItem.swift; path = AppmazoFoundation/Classes/Helpers/KeychainPasswordItem.swift; sourceTree = "<group>"; };
-		A7109EDE8B57B15DB9893B51C1E79E59 /* Pods-AMZLocationManager_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AMZLocationManager_Example.release.xcconfig"; sourceTree = "<group>"; };
-		A95B3BE660739B5A93ADC9B77A869669 /* Pods-AMZLocationManager_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AMZLocationManager_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		AB3D3E7878C36A8BBF2D49D4A8814375 /* AppmazoUIKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AppmazoUIKit-dummy.m"; sourceTree = "<group>"; };
 		AC18DB15E454CD250368027BC5A6E747 /* AppmazoUIKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = AppmazoUIKit.modulemap; sourceTree = "<group>"; };
+		AC3613C75C0E3E9F12DCDD0E0961998B /* AppmazoUIKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = AppmazoUIKit.framework; path = AppmazoUIKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ACB3AAB99E54159878FAD9F602886C24 /* AMZAlertController-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AMZAlertController-umbrella.h"; sourceTree = "<group>"; };
 		AD04C1765CF1EA68292941BDDB297677 /* AppmazoFoundation-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AppmazoFoundation-prefix.pch"; sourceTree = "<group>"; };
 		AE6E078526E6705E65FA55A1F6B2AB15 /* AMZLocationManager-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AMZLocationManager-prefix.pch"; sourceTree = "<group>"; };
-		B0D3EB2C5BC0EEF47AC9C685C0710D77 /* Pods-AMZLocationManager_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AMZLocationManager_Tests-dummy.m"; sourceTree = "<group>"; };
-		B3263355F38312137ED9F05DC4CB16ED /* Pods-AMZLocationManager_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AMZLocationManager_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		B579D0A6BE977AEC9782FBCADAC37461 /* Date+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Date+Extensions.swift"; path = "AppmazoFoundation/Classes/Extensions/Date+Extensions.swift"; sourceTree = "<group>"; };
-		B65660B109C4E300512C70DDE2C39ACC /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B6A1E09B7994613E9CBD4186879E1B77 /* AppmazoFoundation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AppmazoFoundation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		BAF407B85B3B0338194D311238965AD2 /* Pods-AMZLocationManager_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AMZLocationManager_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		BB4B7D2CBD9FB27EF5F249224B6C65A3 /* AMZAlertController.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AMZAlertController.xcconfig; sourceTree = "<group>"; };
-		BDED844F085D03D3B1683DFF37CC842F /* Pods-AMZLocationManager_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AMZLocationManager_Example-resources.sh"; sourceTree = "<group>"; };
+		BDC9E8C5115174C01029F75E835C3FE7 /* AMZAlertController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AMZAlertController.swift; path = AMZAlertController/Classes/AMZAlertController.swift; sourceTree = "<group>"; };
 		BDFFD137F25D07A0594E7B09F81E0BDD /* AppmazoUIKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AppmazoUIKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C7B8034010881B56A0FFA2515A70C964 /* AMZLocationManager.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; path = AMZLocationManager.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		C29D0CA2C53CA94A518049085FE63249 /* AppmazoFoundation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = AppmazoFoundation.framework; path = AppmazoFoundation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C7B8034010881B56A0FFA2515A70C964 /* AMZLocationManager.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; path = AMZLocationManager.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		C939BAD5587FDA70554DDDBFDDF591DE /* AMZAlertController.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AMZAlertController.xcconfig; sourceTree = "<group>"; };
 		CC69A96E82BB18F0954714744C3B6AE4 /* AppmazoFoundation-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AppmazoFoundation-dummy.m"; sourceTree = "<group>"; };
 		CF45B8B27B30DF99653681FC92C3B09A /* String+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "String+Extensions.swift"; path = "AppmazoFoundation/Classes/Extensions/String+Extensions.swift"; sourceTree = "<group>"; };
-		D2F9A71AE3F80FFB239561EF74BE3C38 /* Pods-AMZLocationManager_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-AMZLocationManager_Example.modulemap"; sourceTree = "<group>"; };
-		D460411E32564868DAFC309512975260 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D8327FCAFA25B6603BAEC69C7EC385FB /* AlertController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AlertController.swift; path = AlertController/Classes/AlertController.swift; sourceTree = "<group>"; };
 		D9237D24C9C0219D4BEF06CC26F0F546 /* UINavigationController+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UINavigationController+Extensions.swift"; path = "AppmazoFoundation/Classes/Extensions/UINavigationController+Extensions.swift"; sourceTree = "<group>"; };
 		DA0359A400B9BFD46855EC7074F2B681 /* ButtonTableViewCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ButtonTableViewCell.swift; path = AppmazoUIKit/Classes/Cells/Table/ButtonTableViewCell.swift; sourceTree = "<group>"; };
-		DA61043AFB4B1413A94980B6B1081DD5 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		DA61043AFB4B1413A94980B6B1081DD5 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		DE6A9C3F2AF7FD068B247823258F58BB /* Pods_AMZLocationManager_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_AMZLocationManager_Example.framework; path = "Pods-AMZLocationManager_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF6A4399AD975976BB1FADC25A7E4EF8 /* LocationTableViewCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LocationTableViewCell.swift; path = AppmazoUIKit/Classes/Cells/Table/LocationTableViewCell.swift; sourceTree = "<group>"; };
-		E06E9F425D6837A5DB8CE4F6C47DA3C3 /* AMZLocationManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AMZLocationManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E257F0A32A47A14ABB8780F443C2C2B6 /* AMZAlertController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AMZAlertController-prefix.pch"; sourceTree = "<group>"; };
 		E4D1F964AFD2C30D91F497433ECBE244 /* UIImage+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIImage+Extensions.swift"; path = "AppmazoFoundation/Classes/Extensions/UIImage+Extensions.swift"; sourceTree = "<group>"; };
-		E7FAE98AD0851E6A1063F1D6267AAC46 /* Pods-AMZLocationManager_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-AMZLocationManager_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		E913EEEB9957715FFA7A25639434AA7D /* Pods-AMZLocationManager_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AMZLocationManager_Example-frameworks.sh"; sourceTree = "<group>"; };
 		EAE83EF593605EE7258C459492B616FE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		EC54FC4FDC19C452B73D3E134D915A01 /* AMZAlertController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AMZAlertController-prefix.pch"; sourceTree = "<group>"; };
+		F7F904C1D6C5B4E9C02E2D850504916E /* Pods-AMZLocationManager_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-AMZLocationManager_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		F8A5AE82F91A54A51A8FAC3DF8A6800D /* AMZLocationManager-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AMZLocationManager-dummy.m"; sourceTree = "<group>"; };
 		F8FEB98C047B00597418DA337F89EDA1 /* PermissionPromptTableViewCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PermissionPromptTableViewCell.swift; path = AppmazoUIKit/Classes/Cells/Table/PermissionPromptTableViewCell.swift; sourceTree = "<group>"; };
 		FD27EFCB777C7BF3B29BC5CF595B533A /* AppmazoFoundation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AppmazoFoundation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF3CA8BDAAAB2955F498EB3AAC84B5BB /* AMZAlertController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = AMZAlertController.framework; path = AMZAlertController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF71627A11BB942CE39E8BD635053CBA /* SubtitleTableViewCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SubtitleTableViewCell.swift; path = AppmazoUIKit/Classes/Cells/Table/SubtitleTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -243,14 +222,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C8EF393A9BF5714B949A685C9F26CD36 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				05173F581FE779ACCB1D165409EE202B /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		CAC1D43AB3D63F886793AFEFEA024DCA /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -264,6 +235,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		07251384E1FF1D38B21EC761B4583062 /* AMZAlertController */ = {
+			isa = PBXGroup;
+			children = (
+				70FC8D5EC09282E84ECD07B577278C74 /* AMZAlertAction.swift */,
+				BDC9E8C5115174C01029F75E835C3FE7 /* AMZAlertController.swift */,
+				E727F8E7C82A6BD6C896CAAFF42E4C1B /* Support Files */,
+			);
+			name = AMZAlertController;
+			path = AMZAlertController;
+			sourceTree = "<group>";
+		};
 		22F6FDC7ED731321AEE2AB04A8B42335 /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -286,42 +268,22 @@
 			path = "../Target Support Files/AppmazoUIKit";
 			sourceTree = "<group>";
 		};
-		353354A6091E1409FC58BE0A695C9860 /* Pods-AMZLocationManager_Example */ = {
+		43B0BA7D687A9592A9604A92DBBDD2F8 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				B65660B109C4E300512C70DDE2C39ACC /* Info.plist */,
-				D2F9A71AE3F80FFB239561EF74BE3C38 /* Pods-AMZLocationManager_Example.modulemap */,
-				6523C416924314284EB5F2AD5BA50FFC /* Pods-AMZLocationManager_Example-acknowledgements.markdown */,
-				772EA064B353FCE0E586BA729C781B75 /* Pods-AMZLocationManager_Example-acknowledgements.plist */,
-				02C6FDBB67C26B64C94DDEFD053DD460 /* Pods-AMZLocationManager_Example-dummy.m */,
-				E913EEEB9957715FFA7A25639434AA7D /* Pods-AMZLocationManager_Example-frameworks.sh */,
-				BDED844F085D03D3B1683DFF37CC842F /* Pods-AMZLocationManager_Example-resources.sh */,
-				9817AD1FB225796DC684112834E0FA36 /* Pods-AMZLocationManager_Example-umbrella.h */,
-				BAF407B85B3B0338194D311238965AD2 /* Pods-AMZLocationManager_Example.debug.xcconfig */,
-				A7109EDE8B57B15DB9893B51C1E79E59 /* Pods-AMZLocationManager_Example.release.xcconfig */,
-			);
-			name = "Pods-AMZLocationManager_Example";
-			path = "Target Support Files/Pods-AMZLocationManager_Example";
-			sourceTree = "<group>";
-		};
-		639C68DA3718C40BB4B2C82FE4E99028 /* Targets Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				353354A6091E1409FC58BE0A695C9860 /* Pods-AMZLocationManager_Example */,
-				D888123F0F8D8CCE1AFC5AF5C9584996 /* Pods-AMZLocationManager_Tests */,
+				93851641F6338C7F95357EF8D39C3003 /* Pods-AMZLocationManager_Example */,
 			);
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		6F4A6AF9D159F667EFE0333585D1CE73 /* Products */ = {
+		70C0113D9E9223EAE7DF875F68718268 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				6BD8B37A5E3FF60A997FFD348D32AC51 /* AMZAlertController.framework */,
-				E06E9F425D6837A5DB8CE4F6C47DA3C3 /* AMZLocationManager.framework */,
-				B6A1E09B7994613E9CBD4186879E1B77 /* AppmazoFoundation.framework */,
-				93C43D39E8D9591A01198A0BEDF8CC9C /* AppmazoUIKit.framework */,
-				16A9E6D9B989E2415321CB8CF9F23439 /* Pods_AMZLocationManager_Example.framework */,
-				4D0E2A4978DD86E489ACD37A39A5023B /* Pods_AMZLocationManager_Tests.framework */,
+				FF3CA8BDAAAB2955F498EB3AAC84B5BB /* AMZAlertController.framework */,
+				75C99341D4C264050F47FAA563F0712C /* AMZLocationManager.framework */,
+				C29D0CA2C53CA94A518049085FE63249 /* AppmazoFoundation.framework */,
+				AC3613C75C0E3E9F12DCDD0E0961998B /* AppmazoUIKit.framework */,
+				DE6A9C3F2AF7FD068B247823258F58BB /* Pods_AMZLocationManager_Example.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -343,6 +305,7 @@
 				F43605EBFEDB414EAF8D5CDE31105BAF /* Resources */,
 				2EB488BDDD1EF58F05C348C52388F20E /* Support Files */,
 			);
+			name = AppmazoUIKit;
 			path = AppmazoUIKit;
 			sourceTree = "<group>";
 		};
@@ -353,29 +316,15 @@
 				22F6FDC7ED731321AEE2AB04A8B42335 /* Development Pods */,
 				FC87AFF1D92AF75D7707469106D2936C /* Frameworks */,
 				83FF1454B5A3849DAABF7B3FE165FBD9 /* Pods */,
-				6F4A6AF9D159F667EFE0333585D1CE73 /* Products */,
-				639C68DA3718C40BB4B2C82FE4E99028 /* Targets Support Files */,
+				70C0113D9E9223EAE7DF875F68718268 /* Products */,
+				43B0BA7D687A9592A9604A92DBBDD2F8 /* Targets Support Files */,
 			);
-			sourceTree = "<group>";
-		};
-		7E32924A0863CD80707C38662F94D3AE /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				1C166CB6D19AEAFFCB26AFE1D8957F8B /* AMZAlertController.modulemap */,
-				BB4B7D2CBD9FB27EF5F249224B6C65A3 /* AMZAlertController.xcconfig */,
-				7494742D8DD97176B4104E7E6D5FA306 /* AMZAlertController-dummy.m */,
-				E257F0A32A47A14ABB8780F443C2C2B6 /* AMZAlertController-prefix.pch */,
-				39DA1EB70E3EF7057FF014FD652589CD /* AMZAlertController-umbrella.h */,
-				D460411E32564868DAFC309512975260 /* Info.plist */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/AMZAlertController";
 			sourceTree = "<group>";
 		};
 		83FF1454B5A3849DAABF7B3FE165FBD9 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				C97DD5B638EBC533AA5F32F92F7F89E5 /* AMZAlertController */,
+				07251384E1FF1D38B21EC761B4583062 /* AMZAlertController */,
 				D207A0FD0A06F030A2253788562D4D67 /* AppmazoFoundation */,
 				70DDDEBE17CA04B0A181D77DC5E8EFF9 /* AppmazoUIKit */,
 			);
@@ -410,6 +359,24 @@
 			path = "Example/Pods/Target Support Files/AMZLocationManager";
 			sourceTree = "<group>";
 		};
+		93851641F6338C7F95357EF8D39C3003 /* Pods-AMZLocationManager_Example */ = {
+			isa = PBXGroup;
+			children = (
+				0500E34317CD08D3EAFA13685F8D032D /* Info.plist */,
+				6429DFBEEC62BD843E116BBF8BDE3AD8 /* Pods-AMZLocationManager_Example.modulemap */,
+				F7F904C1D6C5B4E9C02E2D850504916E /* Pods-AMZLocationManager_Example-acknowledgements.markdown */,
+				723D7482E2D076D0B40D35ED1EFE8C2B /* Pods-AMZLocationManager_Example-acknowledgements.plist */,
+				557E4B557C857B1897B483815C551731 /* Pods-AMZLocationManager_Example-dummy.m */,
+				527393662836E14CA7167DD9E69D3784 /* Pods-AMZLocationManager_Example-frameworks.sh */,
+				2AF881A8043A705E231F6294CF95EA4C /* Pods-AMZLocationManager_Example-resources.sh */,
+				5022B7307D799B1028451398EEED1261 /* Pods-AMZLocationManager_Example-umbrella.h */,
+				1A9A798FE803D00DDE8E0BD3E12F1B35 /* Pods-AMZLocationManager_Example.debug.xcconfig */,
+				61535D792FE2C7BFBBC245CA6666DEA7 /* Pods-AMZLocationManager_Example.release.xcconfig */,
+			);
+			name = "Pods-AMZLocationManager_Example";
+			path = "Target Support Files/Pods-AMZLocationManager_Example";
+			sourceTree = "<group>";
+		};
 		9D22CDA90F3DBD3D6C5EBEB2D86621A7 /* AMZLocationManager */ = {
 			isa = PBXGroup;
 			children = (
@@ -429,16 +396,6 @@
 				011483561B3E20EC3ACCD04B969C7E29 /* README.md */,
 			);
 			name = Pod;
-			sourceTree = "<group>";
-		};
-		C97DD5B638EBC533AA5F32F92F7F89E5 /* AMZAlertController */ = {
-			isa = PBXGroup;
-			children = (
-				355B2C59BF8CA1ED7CBD58D6C62A3B57 /* AlertAction.swift */,
-				D8327FCAFA25B6603BAEC69C7EC385FB /* AlertController.swift */,
-				7E32924A0863CD80707C38662F94D3AE /* Support Files */,
-			);
-			path = AMZAlertController;
 			sourceTree = "<group>";
 		};
 		D207A0FD0A06F030A2253788562D4D67 /* AppmazoFoundation */ = {
@@ -461,25 +418,8 @@
 				030410ED4902EE368B60E170B91C4F8F /* URL+Extensions.swift */,
 				8E35E41A5FC49099C320FCAF2A10DDA1 /* Support Files */,
 			);
+			name = AppmazoFoundation;
 			path = AppmazoFoundation;
-			sourceTree = "<group>";
-		};
-		D888123F0F8D8CCE1AFC5AF5C9584996 /* Pods-AMZLocationManager_Tests */ = {
-			isa = PBXGroup;
-			children = (
-				8D5AC1BEF2DBCA6B4055043F7205B538 /* Info.plist */,
-				50D6A69E7FD34C1D3E18FFA742872BE6 /* Pods-AMZLocationManager_Tests.modulemap */,
-				E7FAE98AD0851E6A1063F1D6267AAC46 /* Pods-AMZLocationManager_Tests-acknowledgements.markdown */,
-				B3263355F38312137ED9F05DC4CB16ED /* Pods-AMZLocationManager_Tests-acknowledgements.plist */,
-				B0D3EB2C5BC0EEF47AC9C685C0710D77 /* Pods-AMZLocationManager_Tests-dummy.m */,
-				6422BA7F640265E4BBA7A16C3FA51762 /* Pods-AMZLocationManager_Tests-frameworks.sh */,
-				7ADCA5BA99061A09669C95F6FA825677 /* Pods-AMZLocationManager_Tests-resources.sh */,
-				980C73A306124496503A0990BA9B665B /* Pods-AMZLocationManager_Tests-umbrella.h */,
-				A95B3BE660739B5A93ADC9B77A869669 /* Pods-AMZLocationManager_Tests.debug.xcconfig */,
-				3CF4FDFD74E0F486E76F59D1EF02F68A /* Pods-AMZLocationManager_Tests.release.xcconfig */,
-			);
-			name = "Pods-AMZLocationManager_Tests";
-			path = "Target Support Files/Pods-AMZLocationManager_Tests";
 			sourceTree = "<group>";
 		};
 		DA646BAED9CB098B0E24690EFA0A669C /* iOS */ = {
@@ -488,6 +428,20 @@
 				EAE83EF593605EE7258C459492B616FE /* Foundation.framework */,
 			);
 			name = iOS;
+			sourceTree = "<group>";
+		};
+		E727F8E7C82A6BD6C896CAAFF42E4C1B /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				79C3A7DFBC11E733E338329F6D38B070 /* AMZAlertController.modulemap */,
+				C939BAD5587FDA70554DDDBFDDF591DE /* AMZAlertController.xcconfig */,
+				7960722CC94274273A57ED22028D6A08 /* AMZAlertController-dummy.m */,
+				EC54FC4FDC19C452B73D3E134D915A01 /* AMZAlertController-prefix.pch */,
+				ACB3AAB99E54159878FAD9F602886C24 /* AMZAlertController-umbrella.h */,
+				A28DDC11181C2E383D5DB45B643DA237 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/AMZAlertController";
 			sourceTree = "<group>";
 		};
 		F43605EBFEDB414EAF8D5CDE31105BAF /* Resources */ = {
@@ -551,14 +505,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B1C49FD69519A137D2F5476E8F5659E5 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				80D5A8CFFE60131D2C09FAED5AF975D8 /* Pods-AMZLocationManager_Tests-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
@@ -580,7 +526,7 @@
 			);
 			name = "Pods-AMZLocationManager_Example";
 			productName = "Pods-AMZLocationManager_Example";
-			productReference = 16A9E6D9B989E2415321CB8CF9F23439 /* Pods_AMZLocationManager_Example.framework */;
+			productReference = DE6A9C3F2AF7FD068B247823258F58BB /* Pods_AMZLocationManager_Example.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		66DC75ED4A7EAA6B2C6D9B357FF92393 /* AppmazoUIKit */ = {
@@ -599,7 +545,7 @@
 			);
 			name = AppmazoUIKit;
 			productName = AppmazoUIKit;
-			productReference = 93C43D39E8D9591A01198A0BEDF8CC9C /* AppmazoUIKit.framework */;
+			productReference = AC3613C75C0E3E9F12DCDD0E0961998B /* AppmazoUIKit.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		746208C2EF2FEA4D5CDE9A23702ED218 /* AMZLocationManager */ = {
@@ -616,7 +562,7 @@
 			);
 			name = AMZLocationManager;
 			productName = AMZLocationManager;
-			productReference = E06E9F425D6837A5DB8CE4F6C47DA3C3 /* AMZLocationManager.framework */;
+			productReference = 75C99341D4C264050F47FAA563F0712C /* AMZLocationManager.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		AC10538F3ABF01A263CE187E3475178E /* AppmazoFoundation */ = {
@@ -633,32 +579,14 @@
 			);
 			name = AppmazoFoundation;
 			productName = AppmazoFoundation;
-			productReference = B6A1E09B7994613E9CBD4186879E1B77 /* AppmazoFoundation.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		B6B4C9A8C22B6AFD2F90293BB4168037 /* Pods-AMZLocationManager_Tests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = BF5EF173A9528EE9F7CB5B6646496C50 /* Build configuration list for PBXNativeTarget "Pods-AMZLocationManager_Tests" */;
-			buildPhases = (
-				3CA2008E91F5482AA04642AE998AA1F6 /* Sources */,
-				C8EF393A9BF5714B949A685C9F26CD36 /* Frameworks */,
-				B1C49FD69519A137D2F5476E8F5659E5 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				84AAB7D7E694F210ECAC7B1EFE727F7D /* PBXTargetDependency */,
-			);
-			name = "Pods-AMZLocationManager_Tests";
-			productName = "Pods-AMZLocationManager_Tests";
-			productReference = 4D0E2A4978DD86E489ACD37A39A5023B /* Pods_AMZLocationManager_Tests.framework */;
+			productReference = C29D0CA2C53CA94A518049085FE63249 /* AppmazoFoundation.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		F029DC6B2951BECC30CA420522C78EA2 /* AMZAlertController */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3D88C638157CF67D412718537E9D35B4 /* Build configuration list for PBXNativeTarget "AMZAlertController" */;
 			buildPhases = (
-				C9F39AFC941225BE960627DDCA71E58E /* Sources */,
+				D02443059713839F84F921DEC06DB621 /* Sources */,
 				CAC1D43AB3D63F886793AFEFEA024DCA /* Frameworks */,
 				1DFE7AD60B80A12FF2D8F5E2C88FDA21 /* Headers */,
 			);
@@ -670,7 +598,7 @@
 			);
 			name = AMZAlertController;
 			productName = AMZAlertController;
-			productReference = 6BD8B37A5E3FF60A997FFD348D32AC51 /* AMZAlertController.framework */;
+			productReference = FF3CA8BDAAAB2955F498EB3AAC84B5BB /* AMZAlertController.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -680,7 +608,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0930;
-				LastUpgradeCheck = 1000;
+				LastUpgradeCheck = 0930;
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -690,7 +618,7 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 6F4A6AF9D159F667EFE0333585D1CE73 /* Products */;
+			productRefGroup = 70C0113D9E9223EAE7DF875F68718268 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -699,7 +627,6 @@
 				AC10538F3ABF01A263CE187E3475178E /* AppmazoFoundation */,
 				66DC75ED4A7EAA6B2C6D9B357FF92393 /* AppmazoUIKit */,
 				6417558FB01D6622F4497CD20A6D3A6E /* Pods-AMZLocationManager_Example */,
-				B6B4C9A8C22B6AFD2F90293BB4168037 /* Pods-AMZLocationManager_Tests */,
 			);
 		};
 /* End PBXProject section */
@@ -747,14 +674,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		3CA2008E91F5482AA04642AE998AA1F6 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				8CAE5893B599AAD351F20E8076B111FC /* Pods-AMZLocationManager_Tests-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		47B6C2D3AA503207438FE30E53180F97 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -783,13 +702,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C9F39AFC941225BE960627DDCA71E58E /* Sources */ = {
+		D02443059713839F84F921DEC06DB621 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E7DCEC1CD5952C0AB902A8E6066B93D2 /* AlertAction.swift in Sources */,
-				5332399781D1F905757EE95C4BAE5512 /* AlertController.swift in Sources */,
-				711A8AF1E47BF45BE384C5B5583E7694 /* AMZAlertController-dummy.m in Sources */,
+				652A53B7E98359A2164B0E63D426C04B /* AMZAlertAction.swift in Sources */,
+				5FA02E334596EC789E19C5C44CF3DE7D /* AMZAlertController-dummy.m in Sources */,
+				AD1EA455ACA9F5EFD60ACAB37F1C781B /* AMZAlertController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -807,12 +726,6 @@
 			name = AMZLocationManager;
 			target = 746208C2EF2FEA4D5CDE9A23702ED218 /* AMZLocationManager */;
 			targetProxy = 0717A97EBE3EBAD3FC687CCAC6F8544A /* PBXContainerItemProxy */;
-		};
-		84AAB7D7E694F210ECAC7B1EFE727F7D /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "Pods-AMZLocationManager_Example";
-			target = 6417558FB01D6622F4497CD20A6D3A6E /* Pods-AMZLocationManager_Example */;
-			targetProxy = 95C777437A16BFA26D2338F753F92E9A /* PBXContainerItemProxy */;
 		};
 		945619D526CD30E973D58E06AF60E10F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -901,14 +814,13 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Release;
 		};
 		222377F93D5DF874AB543016C525D80E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BAF407B85B3B0338194D311238965AD2 /* Pods-AMZLocationManager_Example.debug.xcconfig */;
+			baseConfigurationReference = 1A9A798FE803D00DDE8E0BD3E12F1B35 /* Pods-AMZLocationManager_Example.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -936,40 +848,6 @@
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		4E5CE1CE6D61A059DBA852ACC18EBF75 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = A95B3BE660739B5A93ADC9B77A869669 /* Pods-AMZLocationManager_Tests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-AMZLocationManager_Tests/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-AMZLocationManager_Tests/Pods-AMZLocationManager_Tests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -1100,7 +978,7 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 4.1;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -1197,7 +1075,7 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 4.1;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -1231,7 +1109,7 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 4.1;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -1242,7 +1120,7 @@
 		};
 		C780B4AB65DE243A7F8D70BEA41C1A9B /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BB4B7D2CBD9FB27EF5F249224B6C65A3 /* AMZAlertController.xcconfig */;
+			baseConfigurationReference = C939BAD5587FDA70554DDDBFDDF591DE /* AMZAlertController.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
@@ -1265,7 +1143,7 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 4.1;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -1276,7 +1154,7 @@
 		};
 		DFB93A92863DA0500826F18E84952DB6 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BB4B7D2CBD9FB27EF5F249224B6C65A3 /* AMZAlertController.xcconfig */;
+			baseConfigurationReference = C939BAD5587FDA70554DDDBFDDF591DE /* AMZAlertController.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
@@ -1309,7 +1187,7 @@
 		};
 		EB48C228543FC9780B18FFDCF80DA562 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A7109EDE8B57B15DB9893B51C1E79E59 /* Pods-AMZLocationManager_Example.release.xcconfig */;
+			baseConfigurationReference = 61535D792FE2C7BFBBC245CA6666DEA7 /* Pods-AMZLocationManager_Example.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -1335,42 +1213,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		FBC56D899A0A5F2529832E84180D6DC0 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3CF4FDFD74E0F486E76F59D1EF02F68A /* Pods-AMZLocationManager_Tests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-AMZLocationManager_Tests/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-AMZLocationManager_Tests/Pods-AMZLocationManager_Tests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -1422,15 +1265,6 @@
 			buildConfigurations = (
 				689D7F5A3D6DFF46EF32F79B21F4EA6B /* Debug */,
 				A367A54921AD1A65A83BFF712FC8377A /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		BF5EF173A9528EE9F7CB5B6646496C50 /* Build configuration list for PBXNativeTarget "Pods-AMZLocationManager_Tests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				4E5CE1CE6D61A059DBA852ACC18EBF75 /* Debug */,
-				FBC56D899A0A5F2529832E84180D6DC0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

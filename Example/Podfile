@@ -5,10 +5,4 @@ target 'AMZLocationManager_Example' do
   pod 'AMZLocationManager', :path => '../'
   pod 'AppmazoUIKit'
   pod 'AMZAlertController'
-
-  target 'AMZLocationManager_Tests' do
-    inherit! :search_paths
-
-    
-  end
 end
