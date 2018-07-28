@@ -27,7 +27,7 @@ public class AMZLocationManager: NSObject {
         didSet {
             UserDefaults.standard.set(useCustomLocation, forKey: AMZLocationManagerShouldUseCustomLocationKey)
             UserDefaults.standard.synchronize()
-            useCustomLocation ? locationManager.stopUpdatingLocation() : startMonitoringLocation()
+            useCustomLocation ? stopMonitoringLocation() : startMonitoringLocation()
         }
     }
     
@@ -153,17 +153,25 @@ public class AMZLocationManager: NSObject {
      Starts monitoring the user's location if authorized and not using custom location.
      */
     public func startMonitoringLocation() {
+        stopMonitoringLocation()
+
         if canUseLocationTracking() {
             isLocationUpdating = true
-            locationManager.stopUpdatingLocation()
             locationManager.startUpdatingLocation()
         }
     }
     
     /**
+     Stops monitoring the user's location.
+     */
+    public func stopMonitoringLocation() {
+        locationManager.stopUpdatingLocation()
+    }
+    
+    /**
      Clears the location data.
      */
-    private func clearLocation() {
+    public func clearLocation() {
         updateLocation(nil)
         locationUpdatedBlock?(nil)
     }
@@ -297,7 +305,7 @@ public class AMZLocationManager: NSObject {
 extension AMZLocationManager: CLLocationManagerDelegate {
     public func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
         guard status != .denied && status != .notDetermined else {
-            locationManager.stopUpdatingLocation()
+            stopMonitoringLocation()
             locationAuthorizationUpdatedBlock?(status)
             return
         }
