@@ -183,7 +183,7 @@ public class AMZLocationManager: NSObject {
         - address: The address string.
         - completion: The completion handler once the location is generated.
      */
-    private func location(forAddress address: String, completion: @escaping (CLLocation?, String?, Error?) -> ()) {
+    public func location(forAddress address: String, completion: @escaping (CLLocation?, String?, Error?) -> ()) {
         CLGeocoder().geocodeAddressString(address) { [weak self] (placemarks, error) in
             if let placemark = placemarks?.first, let correctedAddressString = self?.address(forPlacemark: placemark), let location = placemark.location {
                 completion(location, correctedAddressString, nil)
@@ -268,7 +268,7 @@ public class AMZLocationManager: NSObject {
         - location: CLLocation
         - completion: (String?, Error?)
      */
-    private func address(forLocation location: CLLocation, completion: @escaping (String?, Error?) -> ()) {
+    public func address(forLocation location: CLLocation, completion: @escaping (String?, Error?) -> ()) {
         CLGeocoder().reverseGeocodeLocation(location, completionHandler: {[weak self] (placemarks, error) -> Void in
             if let error = error {
                 completion(nil, error)
@@ -286,7 +286,7 @@ public class AMZLocationManager: NSObject {
      
      - returns: String?
      */
-    private func address(forPlacemark placemark: CLPlacemark) -> String? {
+    public func address(forPlacemark placemark: CLPlacemark) -> String? {
         var address = ""
         if let city = placemark.locality, let state = placemark.administrativeArea, let postalCode = placemark.postalCode {
             address = city + ", " + state + ", " + postalCode

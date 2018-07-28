@@ -1,6 +1,6 @@
 {
   "name": "AMZLocationManager",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "summary": "A simple way to manage a user's location",
   "swift_version": "4.1",
   "description": "AMZLocationManager is a simple way to easily manager a users location within your app.",
@@ -14,7 +14,7 @@
   },
   "source": {
     "git": "https://github.com/Appmazo/AMZLocationManager.git",
-    "tag": "1.0.0"
+    "tag": "1.0.2"
   },
   "social_media_url": "https://twitter.com/appmazo",
   "platforms": {
