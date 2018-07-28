@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
     s.name             = 'AMZLocationManager'
-    s.version          = '1.0.1'
+    s.version          = '1.0.2'
     s.summary          = 'A simple way to manage a user\'s location'
     s.swift_version    = '4.1'
     
