@@ -35,6 +35,6 @@ Pod::Spec.new do |s|
     #s.resources = 'AMZLocationManager/Assets/**/*.*'
     
     # s.public_header_files = 'Pod/Classes/**/*.h'
-    # s.frameworks = 'UIKit', 'MapKit'
+    s.frameworks = 'CoreLocation'
     # s.dependency 'AppmazoUIKit', '~> 1.0.3'
 end

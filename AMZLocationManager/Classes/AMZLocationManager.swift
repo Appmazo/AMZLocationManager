@@ -15,13 +15,30 @@ public class AMZLocationManager: NSObject {
     private let AMZLocationManagerLastLocationLongitudeKey = "AMZLocationManagerLastLocationLongitudeKey"
 
     private var locationManager = CLLocationManager()
+    private var geocoderOperationQueue = OperationQueue()
+    private var lastOperationDate: Date?
     
-    private(set) public var isLocationUpdating = false
     private(set) public var currentLocation: CLLocation?
     private(set) public var currentAddress: String?
+    private(set) public var currentPlacemark: CLPlacemark?
+
+    private var locationUpdatedBlocks = [((CLLocation?) -> Void)]()
+    public var locationUpdatedBlock: ((CLLocation?) -> Void)? {
+        didSet {
+            guard let locationUpdatedBlock = locationUpdatedBlock else { return }
+            locationUpdatedBlocks.append(locationUpdatedBlock)
+            locationUpdatedBlock(currentLocation)
+        }
+    }
     
-    public var locationUpdatedBlock: ((CLLocation?) -> Void)?
-    public var locationAuthorizationUpdatedBlock: ((CLAuthorizationStatus) -> Void)?
+    private var locationAuthorizationUpdatedBlocks = [((CLAuthorizationStatus) -> Void)]()
+    public var locationAuthorizationUpdatedBlock: ((CLAuthorizationStatus) -> Void)? {
+        didSet {
+            guard let locationAuthorizationUpdatedBlock = locationAuthorizationUpdatedBlock else { return }
+            locationAuthorizationUpdatedBlocks.append(locationAuthorizationUpdatedBlock)
+            locationAuthorizationUpdatedBlock(CLLocationManager.authorizationStatus())
+        }
+    }
 
     public var useCustomLocation: Bool = false {
         didSet {
@@ -57,6 +74,8 @@ public class AMZLocationManager: NSObject {
     
     public override init() {
         super.init()
+        
+        geocoderOperationQueue.maxConcurrentOperationCount = 1
         
         locationManager.delegate = self
         locationManager.distanceFilter = distanceFilter
@@ -129,6 +148,10 @@ public class AMZLocationManager: NSObject {
         return CLLocationManager.authorizationStatus() == .authorizedWhenInUse
     }
     
+    public func test() -> String {
+        return "BOOM!"
+    }
+
     /**
      Determines if the user has authorized location services always.
      
@@ -153,10 +176,8 @@ public class AMZLocationManager: NSObject {
      Starts monitoring the user's location if authorized and not using custom location.
      */
     public func startMonitoringLocation() {
-        stopMonitoringLocation()
-
         if canUseLocationTracking() {
-            isLocationUpdating = true
+            stopMonitoringLocation()
             locationManager.startUpdatingLocation()
         }
     }
@@ -173,7 +194,7 @@ public class AMZLocationManager: NSObject {
      */
     public func clearLocation() {
         updateLocation(nil)
-        locationUpdatedBlock?(nil)
+        executeLocationUpdatedBlocks(nil)
     }
 
     /**
@@ -213,15 +234,16 @@ public class AMZLocationManager: NSObject {
         - location: CLLocation
      */
     private func updateLocation(_ location: CLLocation?) {
+        guard location?.coordinate.latitude != currentLocation?.coordinate.latitude && location?.coordinate.longitude != currentLocation?.coordinate.longitude else { return }
+        
         currentLocation = location
 
         guard let location = location else {
-            isLocationUpdating = false
             currentAddress = nil
             UserDefaults.standard.removeObject(forKey: AMZLocationManagerLastLocationLatitudeKey)
             UserDefaults.standard.removeObject(forKey: AMZLocationManagerLastLocationLongitudeKey)
             UserDefaults.standard.synchronize()
-            locationUpdatedBlock?(nil)
+            executeLocationUpdatedBlocks(nil)
             return
         }
         
@@ -231,8 +253,7 @@ public class AMZLocationManager: NSObject {
 
         self.address(forLocation: location) { [weak self] (address, error) in
             self?.currentAddress = address
-            self?.isLocationUpdating = false
-            self?.locationUpdatedBlock?(location)
+            self?.executeLocationUpdatedBlocks(location)
         }
     }
     
@@ -269,6 +290,18 @@ public class AMZLocationManager: NSObject {
         - completion: (String?, Error?)
      */
     public func address(forLocation location: CLLocation, completion: @escaping (String?, Error?) -> ()) {
+        let operation = BlockOperation {
+            self.addressOperation(forLocation: location, completion: completion)
+        }
+        queueGeocoderBlockOperation(operation)
+    }
+    
+    private func addressOperation(forLocation location: CLLocation, completion: @escaping (String?, Error?) -> ()) {
+        if let lastOperationDate = lastOperationDate {
+            print("Last Operation Started: \(Date().timeIntervalSince(lastOperationDate)) seconds ago.")
+        }
+        
+        lastOperationDate = Date()
         CLGeocoder().reverseGeocodeLocation(location, completionHandler: {[weak self] (placemarks, error) -> Void in
             if let error = error {
                 completion(nil, error)
@@ -276,6 +309,22 @@ public class AMZLocationManager: NSObject {
                 completion(self?.address(forPlacemark: placemark), nil)
             }
         })
+    }
+
+    private func queueGeocoderBlockOperation(_ blockOperation: BlockOperation) {
+        if let lastOperation = geocoderOperationQueue.operations.last {
+            blockOperation.addDependency(lastOperation)
+        }
+        geocoderOperationQueue.addOperation(blockOperation)
+        
+        if geocoderOperationQueue.operationCount > 25 {
+            print("Delaying operations...")
+            let delayOperation = BlockOperation {
+                sleep(UInt32(0.5))
+            }
+            delayOperation.addDependency(blockOperation)
+            geocoderOperationQueue.addOperation(delayOperation)
+        }
     }
 
     /**
@@ -288,9 +337,7 @@ public class AMZLocationManager: NSObject {
      */
     public func address(forPlacemark placemark: CLPlacemark) -> String? {
         var address = ""
-        if let city = placemark.locality, let state = placemark.administrativeArea, let postalCode = placemark.postalCode {
-            address = city + ", " + state + ", " + postalCode
-        } else if let city = placemark.locality, let state = placemark.administrativeArea {
+        if let city = placemark.locality, let state = placemark.administrativeArea {
             address = city + ", " + state
         } else if let city = placemark.administrativeArea {
             address = city
@@ -300,18 +347,32 @@ public class AMZLocationManager: NSObject {
         
         return address
     }
+    
+    // MARK: Blocks
+    
+    private func executeLocationAuthorizationUpdatedBlocks(_ status: CLAuthorizationStatus) {
+        for locationAuthorizationUpdatedBlock in locationAuthorizationUpdatedBlocks {
+            locationAuthorizationUpdatedBlock(status)
+        }
+    }
+
+    private func executeLocationUpdatedBlocks(_ location: CLLocation?) {
+        for locationUpdatedBlock in locationUpdatedBlocks {
+            locationUpdatedBlock(location)
+        }
+    }
 }
 
 extension AMZLocationManager: CLLocationManagerDelegate {
     public func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
         guard status != .denied && status != .notDetermined else {
             stopMonitoringLocation()
-            locationAuthorizationUpdatedBlock?(status)
+            executeLocationAuthorizationUpdatedBlocks(status)
             return
         }
         
         startMonitoringLocation()
-        locationAuthorizationUpdatedBlock?(status)
+        executeLocationAuthorizationUpdatedBlocks(status)
     }
     
     public func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
